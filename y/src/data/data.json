@@ -1,0 +1,117 @@
+{
+    "menuItems": [
+      {
+        "name": "About Us",
+        "link": "/about-us"
+      },
+      {
+        "name": "Loans",
+        "link": "/loans",
+        "submenu": [
+          {
+            "name": "Personal Loan",
+            "link": "/loans/personal-loan"
+          },
+          {
+            "name": "Home Loan",
+            "link": "/loans/home-loan"
+          },
+          {
+            "name": "Business Loan",
+            "link": "/loans/business-loan"
+          },
+          {
+            "name": "Loan Against Property",
+            "link": "/loans/loan-against-property"
+          },
+          {
+            "name": "Car Loan",
+            "link": "/loans/car-loan"
+          },
+          {
+            "name": "Education Loan",
+            "link": "/loans/education-loan"
+          },
+          {
+            "name": "Gold Loan",
+            "link": "/loans/gold-loan"
+          }
+        ]
+      },
+      {
+        "name": "DSA",
+        "link": "/dsa",
+        "submenu": [
+            {
+              "name": "Personal Loan DSA",
+              "link": "/loans/personal-loan"
+            },
+            {
+              "name": "Home Loan DSA",
+              "link": "/loans/home-loan"
+            },
+            {
+              "name": "Business Loan DSA",
+              "link": "/loans/business-loan"
+            },
+            {
+              "name": "Loan Against Property DSA",
+              "link": "/loans/loan-against-property"
+            },
+            {
+              "name": "Education Loan DSA",
+              "link": "/loans/car-loan"
+            },
+            {
+              "name": "Auto Loan DSA",
+              "link": "/loans/education-loan"
+            },
+            {
+              "name": "Credit Card DSA",
+              "link": "/loans/gold-loan"
+            }
+          ]
+      },
+      {
+        "name": "Credit Cards",
+        "link": "/credit-cards"
+      },
+      {
+        "name": "Insurance",
+        "link": "/insurance",
+        "submenu": [
+            {
+              "name": "All Insurance",
+              "link": "All-Insurance"
+            },
+            {
+              "name": "Life-Insurance",
+              "link": "/loans/home-loan"
+            },
+            {
+              "name": "Health Insurance",
+              "link": "Health-Insurance"
+            },
+            {
+              "name": "General Insurance",
+              "link": "General-Insurance"
+            }
+            
+          ]
+      },
+      {
+        "name": "Become a Partner",
+        "link": "/become-a-partner"
+      },
+      
+      {
+        "name": "Blogs",
+        "link": "/blogs"
+      },
+      {
+        "name": "Contact Us",
+        "link": "/contact-us"
+      }
+    ]
+  }
+  

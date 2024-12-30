@@ -1,0 +1,61 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+#root {
+   padding: 0;
+   text-align: inherit;
+   max-width: inherit;
+   margin: inherit;
+  }
+  /* Reset body styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Set a default font */
+    background: #fff; /* Set a default background */
+    color: #000; /* Set a default text color */
+    display: inherit;
+    place-items: inherit;
+    min-width: inherit;
+  }
+  
+  /* Reset universal box model */
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 100%; /* Ensure consistent root font size */
+  }
+  
+  /* Remove padding and margin from common elements */
+  h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Reset tables */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Reset images */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
