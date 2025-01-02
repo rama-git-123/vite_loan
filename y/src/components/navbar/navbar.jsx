@@ -1,12 +1,13 @@
-import menuData from "../../data/data.json";
+import data from "../../data/data.json";
 import logo from "../../assets/images/logo.webp";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="container-fluid navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img src={logo} width="157" height="44" />
-        </a>
+        </Link>
 
         <button
           className="navbar-toggler"
@@ -22,19 +23,19 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            {menuData?.menuItems?.map((item, index) => (
+            {data?.menuItems?.map((item, index) => (
               <li key={index} className="nav-item dropdown">
-                <a
+                <Link
                   className={
                     item?.submenu ? "nav-link dropdown-toggle" : "nav-link"
                   }
-                  href="#"
+                  to={item.link}
                   role="button"
                   data-bs-toggle={item?.submenu ? "dropdown" : null}
                   aria-expanded="false"
                 >
                   {item.name}
-                </a>
+                </Link>
 
                 <ul className="dropdown-menu">
                   {item.submenu?.map((submenuItem, index) => (

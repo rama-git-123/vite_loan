@@ -112,6 +112,49 @@
         "name": "Contact Us",
         "link": "/contact-us"
       }
+    ],
+    "loanItems":[
+     {
+        "title":"Home Loan",
+        "description":"Your Dream Home Awaits - Explore Our Range Of Home Loan Products.",
+        "link":"Check Eligibility"
+     },
+     {
+        "title":"Loan against Property",
+        "description":"Unlock your property's value with tailored loan solutions..",
+        "link":"Check Eligibility"
+     },
+     {
+        "title":"Personal Loan",
+        "description":"Achieve your dreams with our versatile personal loan options.",
+        "link":"Check Eligibility"
+     },
+     {
+        "title":"Business Loan",
+        "description":"Boost your business growth with our flexible financing options.",
+        "link":"Check Eligibility"
+     },
+     {
+        "title":"Education Loan",
+        "description":"Invest in your child's future with our specialized education loans.",
+        "link":"Check Eligibility"
+     },
+     {
+        "title":"Car Loan",
+        "description":"Drive your dream car with our quick and flexible car loans.",
+        "link":"Check Eligibility"
+     },
+     {
+        "title":"Gold Loan",
+        "description":"Meet your financial needs with gold loans from trusted banks.",
+        "link":"Check Eligibility"
+     },
+     {
+        "title":"Credit Cards",
+        "description":"Upgrade your lifestyle with feature-packed, rewarding credit cards.",
+        "link":"Check Eligibility"
+     }
+
     ]
   }
   

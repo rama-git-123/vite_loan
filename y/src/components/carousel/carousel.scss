@@ -1,0 +1,31 @@
+.banner-container{
+    max-width: 100%;
+     background: linear-gradient(to bottom, #fff, #e0eeff);
+    img{
+        height: 100%;
+        width: 100%;
+        max-width: 620px;
+    }
+    .carousel-inner{
+        margin-top: 0px;
+        @media screen and (max-width: 425px){
+            margin-top: 20px;
+        }
+    }
+    .banner-text{
+        text-align: center;
+        margin-top: 250px;
+        @media screen and (max-width: 425px){
+            margin-top: 0px;
+        }
+    }
+    h2{
+        font-size: 33px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 600;
+        color: #494e4c;
+    }
+}
