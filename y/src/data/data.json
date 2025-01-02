@@ -163,6 +163,26 @@
         "icon": "bi-credit-card"
      }
 
-    ]
+    ],
+    "insuranceItems":[
+        {
+           "title":"Life Insurance",
+           "description":"Protect Your Loved One's Future With Our Reliable Life Insurance Plans.",
+           "link":"Starting from ₹ 450/month*",
+           "image": "src/assets/images/lifeinsurance.webp"
+        },
+        {
+           "title":"Health Insurance",
+           "description":"Ensuring Your Health Is In Good Hands - Explore Our Top-notch Insurance Solutions.",
+           "link":"Starting from ₹ 450/month*",
+           "image": "src/assets/images/health.webp"
+        },
+        {
+           "title":"General Insurance",
+           "description":"Insurance Made Easy - Your Protection, Our Expertise.",
+           "link":"Starting from ₹ 450/month*",
+           "image": "src/assets/images/general-insurance-service.jpg"
+        }
+       ]
   }
   
