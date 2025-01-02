@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Navbar from "./components/navbar/navbar";
-
+import "bootstrap-icons/font/bootstrap-icons.css";
 import MainContainer from "./container/container";
 function App() {
   const [count, setCount] = useState(0);
