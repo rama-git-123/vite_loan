@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+.btn{
+  color: #e73f4e !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  background: rgba(231, 63, 78, .11) !important;
+  border: none !important;
+
+}
+.navbar {
+  background: #fff !important;
+  box-shadow: 0 6px 10px 0 rgba(67, 118, 186, .06)!important;
+  padding: 22px;
+}
