@@ -10,6 +10,7 @@ import ContactUs from "./pages/ContactUs";
 import Navbar from "./components/navbar/navbar";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import MainContainer from "./container/container";
+import Footer from "./components/footer/footer";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

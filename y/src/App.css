@@ -17,7 +17,19 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
+.h2-font{
+  font-size: 2.5rem;
+}
+.margin-t-1{
+  margin-top: 1rem;
+}
+.margin-t-2{
+  margin-top: 2.5rem;
+}
+.title-txt{
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

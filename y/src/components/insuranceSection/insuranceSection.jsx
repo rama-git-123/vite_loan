@@ -8,8 +8,8 @@ const InsuranceSection = ({ mainData }) => {
   // }
   return (
     <div className="insurance-section">
-      <h3>Insurance</h3>
-      <p>Wide Range of Insurance Products</p>
+      <h2 className="margin-t-2 h2-font">Insurance</h2>
+      <p className="title-txt">Wide Range of Insurance Products</p>
       <div className="row">
         {mainData?.insuranceItems?.map((item, index) => (
           <div className="col-sm-4" key={index}>

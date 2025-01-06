@@ -1,12 +1,12 @@
 import data from "../../data/data.json";
-import logo from "../../assets/images/logo.webp";
+import logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="container-fluid navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img src={logo} width="157" height="44" />
+          <img src={logo} width="130" />
         </Link>
 
         <button
