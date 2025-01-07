@@ -12,7 +12,16 @@
     .check-link{
         text-decoration: none;
         color: #ff403f;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
     }
+    .check-link:hover{
+       
+        color: #a81d1d;
+      
+       
+    }
+
+    
    
 
 }
