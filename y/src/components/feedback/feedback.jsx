@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import "./feedback.scss";
-const Feedback = ({ mainData }) => {
-  const images = [
-    "https://via.placeholder.com/600x300?text=Slide+1",
-    "https://via.placeholder.com/600x300?text=Slide+2",
-    "https://via.placeholder.com/600x300?text=Slide+3",
-  ];
 
+const Feedback = ({ mainData }) => {
+  const feedbackItems = mainData?.feedback?.items || [];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -15,10 +11,10 @@ const Feedback = ({ mainData }) => {
     setIsAnimating(true);
     setTimeout(() => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        prevIndex === 0 ? feedbackItems.length - 1 : prevIndex - 1
       );
       setIsAnimating(false);
-    }, 500); // Match CSS animation duration
+    }, 500); // Match CSS duration
   };
 
   const handleNext = () => {
@@ -26,29 +22,43 @@ const Feedback = ({ mainData }) => {
     setIsAnimating(true);
     setTimeout(() => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        prevIndex === feedbackItems.length - 1 ? 0 : prevIndex + 1
       );
       setIsAnimating(false);
-    }, 500); // Match CSS animation duration
+    }, 500); // Match CSS duration
   };
 
   return (
     <div className="feedback">
-      <h2 className="h2-font">{mainData?.feedback?.title}</h2>
-
-      <div className="fed-section">
-        <h3>{mainData?.feedback?.description}</h3>
-        <p>{mainData?.feedback?.items[0].testimonial}</p>
-        <h5>{mainData?.feedback?.items[0].name}</h5>
-        <p>{mainData?.feedback?.items[0].designation}</p>
+      <h2>{mainData?.feedback?.title}</h2>
+      <div className="carousel-container">
+        <div
+          className="carousel-track"
+          style={{
+            display: "flex",
+            transform: `translateX(-${currentIndex * 100}%)`,
+            transition: "transform 0.5s ease-in-out",
+          }}
+        >
+          {feedbackItems.map((item, index) => (
+            <div className="fed-section" key={index}>
+              <h3>{item?.testimonial}</h3>
+              <p>{item?.name}</p>
+              <p>{item?.designation}</p>
+            </div>
+          ))}
+        </div>
       </div>
-      {/* <button className="arrow left" onClick={handlePrev}>
-        &#10094;
-      </button>
-      <button className="arrow right" onClick={handleNext}>
-        &#10095;
-      </button> */}
+      <div>
+        <button className="arrow left" onClick={handlePrev}>
+          &#10094;
+        </button>
+        <button className="arrow right" onClick={handleNext}>
+          &#10095;
+        </button>
+      </div>
     </div>
   );
 };
+
 export default Feedback;

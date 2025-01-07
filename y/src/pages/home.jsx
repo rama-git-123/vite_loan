@@ -18,7 +18,7 @@ const Home = ({ mainData }) => {
         <AdvantageSection mainData={mainData} />
         <ChannelPartner mainData={mainData} />
         <Feedback mainData={mainData} />
-        <Faq />
+        <Faq mainData={mainData} />
         <Coustomer />
       </div>
     </>
