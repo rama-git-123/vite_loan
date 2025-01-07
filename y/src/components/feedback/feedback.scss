@@ -1,0 +1,77 @@
+.feedback {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 50px;
+
+  h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth slide effect */
+}
+
+.carousel-track .fed-section {
+  min-width: 100%;
+  padding: 25px;
+  background: #f4f8fb;
+  border-radius: 15px;
+
+  h3 {
+    font-family: cursive;
+    color: #7e7c7c;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-family: cursive;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(255, 64, 63);
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 10px 18px;
+  z-index: 10;
+}
+
+.arrow.left {
+  right: 60px;
+  top:260px;
+  @media screen and (max-width: 425px){
+    top:430px;
+}
+}
+
+.arrow.right {
+  right: 10px;
+  top:260px;
+  @media screen and (max-width: 425px){
+    top:430px;
+}
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}

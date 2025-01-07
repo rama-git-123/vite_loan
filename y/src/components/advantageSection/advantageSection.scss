@@ -1,0 +1,42 @@
+.advantage-section{
+    h2{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    ul{
+        padding: 0;
+    }
+    .advantage-item{
+    width: 300px;
+    background: #f6f6f6;
+    padding: 20px 15px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-inline-start: 40px;
+    cursor: pointer;
+    @media screen and (max-width: 425px){
+        margin-inline-start: 0px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    i{
+        
+        font-size: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+    }
+
+    }
+    .advantage-item:hover{
+        box-shadow: rgba(0, 0, 0, 0.16);
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+       
+       
+
+    }
+    
+}

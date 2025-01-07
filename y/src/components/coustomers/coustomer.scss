@@ -1,0 +1,23 @@
+.coustomer{
+    margin-top: 50px;
+    text-align: center;
+    .coustomer-item ul li{
+        width: 260px;
+        background: #f6f6f6;
+        padding: 12px;
+        text-align: left;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        margin-bottom: 20px;
+        display: inline-block;
+        margin-inline-start: 40px;
+        cursor: pointer;
+        text-align: -webkit-center;
+        filter: grayscale(100%);
+        
+}
+    .coustomer-item ul li:hover{
+    filter: grayscale(0%);
+    transition: filter 0.3s ease;
+}
+}

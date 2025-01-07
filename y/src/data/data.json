@@ -183,6 +183,116 @@
            "link":"Starting from ₹ 450/month*",
            "image": "src/assets/images/general-insurance-service.jpg"
         }
-       ]
+       ],
+       "advantage":[
+        {
+          "title":"India’s Leading Loans Distributor",
+          "icon":"bi-record2",
+          "link":""
+        },
+        {
+          "title":"Pan India Presence",
+          "icon":"",
+          "link":""
+        },
+        {
+          "title":"1 Years Of Complete",
+          "icon":"",
+          "link":""
+        },
+        {
+          "title":"Be Your Own Boss",
+          "icon":"",
+          "link":""
+        },
+        {
+          "title":"Multiple Products",
+          "icon":"",
+          "link":""
+        },
+        {
+          "title":"Training Programs",
+          "icon":"",
+          "link":""
+        },
+        {
+          "title":"Easy Onboarding Process",
+          "icon":"",
+          "link":""
+        },
+        {
+          "title":"EMI Calculator",
+          "icon":"",
+          "link":""
+        }
+
+      ],
+      "chhanelPatner":{
+        "title":" India’s First B2B Loan Distribution Channel Partner",
+        "description":"Discover Ruconnect, India’s first B2B fintech app in the loan distribution domain, brought to you by Ruloans Distribution Services Pvt. Ltd, a trusted digital loan service provider for lenders across India. Designed exclusively for channel partners, Ruconnect offers a comprehensive suite of financial products including personal loans, business loans, home loans, loans against property, credit cards, insurance, and more.",
+        "items":[
+          {
+            "text":"Access a PAN India network of lenders and customers."
+          },
+          {
+            "text":"Benefit from being the first in the industry to offer a Free CIBIL Check."
+          },
+          {
+            "text":"Use convenient features like an EMI calculator to assist customers."
+          },
+          {
+            "text":"Empower your customers with seamless loan options."
+          },
+          {
+            "text":"Start your journey as a successful loan distribution partner and begin earning"
+          }
+        ]
+      },
+      "feedback":{
+        "title":"What People Say About Us?",
+        "description":"Will surely refer to Daitapati Finance",
+        "items":[
+          {
+            "testimonial":"“I really appreciate your kind efforts, which helped me secure the Personal Loan disbursed from HDFC Bank through Daitapati Finance Company. It was a wonderful experience dealing with you. Your dedication and hardworking approach are highly appreciable, which made the entire process smooth” ",
+            "name":"Rahul Sharma",
+            "designation":"Manager - Advertising Ad Operations"
+          },
+          {
+            "testimonial":"“This time, I worked with Daitapati Finance to transfer my Home Loan to Kotak Bank. The way in which this was handled was awesome. Thanks to Rishabh for recommending the balance transfer option, where I will save a significant amount. I will surely refer Daitapati Finance' services to my close contacts.",
+            "name":"Tapan Kumar",
+            "designation":"General Manager"
+          },
+          {
+            "testimonial":" “Hello, The experience of working with Chirag was really great, he was professional and helped to disburse the loan amount speedily. He was transparent and professional on getting the work done.”",
+            "name":"Suman Panda",
+            "designation":"Vice President - Business development"
+          }
+      ]
+      },
+      "faq":[
+        {
+          "title":"Who can become a partner with Daitapati Fiannce?",
+          "content":"Anyone from loan agents, ex-bankers, financial analysts, Insurance agents, mutual fund agents, chartered accountants, builders, or professionals from any other field can become a partner with Ruloans. If you’re interested in offering a wide range of financial products and earning attractive commissions, you’re welcome to join us."
+        },
+        {
+          "title":"How to Become a DSA Partner With Daitapati Fiannce?",
+          "content":" To become a DSA Partner (Direct Selling Agent) with Daitapati Fiannce, follow these simple steps:,Step 1: Visit the Ruloans website and cpck on the ‘Become a Partner’ optioStep 2: Complete the registration form by filpng in your details and submitting it.Step 3: A member of the Ruloans support team will contact you to guide you through the next steps and arrange a meeting.Step 4: During the meeting, a Ruloans Manager will explain the lead generation process and provide you with all the necessary information Step 5: Once you understand and are comfortable with the processes, an agreement will be signed between you and Ruloans.After the agreement is signed and stamped, you will officially become a Ruloans DSA Agent.Connect with us today to start your journey as a DSA Agent and unlock the potential to earn attractive commissions while helping customers secure the best financial products!"
+        },
+        {
+          "title":"What are the Eligibility Criteria for Becoming a DSA Agent with Daitapati Fiannce?",
+          "content":"Anyone from loan agents, ex-bankers, financial analysts, Insurance agents, mutual fund agents, chartered accountants, builders, or professionals from any other field can become a partner with Ruloans. If you’re interested in offering a wide range of financial products and earning attractive commissions, you’re welcome to join us."
+        },
+        {
+          "title":"What documents are required for DSA Registration with Daitapati Fiannce?",
+          "content":"Anyone from loan agents, ex-bankers, financial analysts, Insurance agents, mutual fund agents, chartered accountants, builders, or professionals from any other field can become a partner with Ruloans. If you’re interested in offering a wide range of financial products and earning attractive commissions, you’re welcome to join us."
+        },
+        {
+          "title":"What support do Daitapati Fiannce provide to its DSAs?",
+          "content":"Anyone from loan agents, ex-bankers, financial analysts, Insurance agents, mutual fund agents, chartered accountants, builders, or professionals from any other field can become a partner with Ruloans. If you’re interested in offering a wide range of financial products and earning attractive commissions, you’re welcome to join us."
+        }
+
+      ]
+        
+
   }
   
