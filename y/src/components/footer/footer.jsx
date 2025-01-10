@@ -9,8 +9,12 @@ const Footer = () => {
         <div class="row">
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <p>
-              Your company's brief description goes here. Share your mission,
-              vision, or tagline to engage your visitors.
+              Established in 2024, Daitapati Finance has emerged as a dynamic
+              and trustworthy financial institution, dedicated to providing
+              comprehensive financial solutions across India. Under the
+              visionary leadership of our Chairman, Bhabani Prasad Das
+              Mahapatra, we specialize in offering a wide range of secured and
+              unsecured loan products tailored to meet diverse needs.
             </p>
             <Link className="navbar-brand" to="/">
               <img src={logo} width="200" />
@@ -46,14 +50,11 @@ const Footer = () => {
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <h6 class="text-uppercase fw-bold">Contact</h6>
             <p>
-              <i class="fas fa-home me-2"></i> 123 Main Street, City, Country
+              Address-307, 3rd Floor, Nexus Esplanade Mall, Rasulgarh,
+              Bhubaneshwar-751010
             </p>
-            <p>
-              <i class="fas fa-envelope me-2"></i> info@company.com
-            </p>
-            <p>
-              <i class="fas fa-phone me-2"></i> + 123 456 789
-            </p>
+            <p>Phone-myscope435@gmail.com</p>
+            <p>9861346171</p>
           </div>
 
           <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-md-0 mb-4">

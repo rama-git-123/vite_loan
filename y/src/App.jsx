@@ -21,7 +21,7 @@ function App() {
         <MainContainer mainData={data} />
         <Routes>
           <Route path="/" element={<Home mainData={data} />} />
-          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/about-us" element={<AboutUs mainData={data} />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
