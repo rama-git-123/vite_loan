@@ -10,7 +10,7 @@
         "submenu": [
           {
             "name": "Personal Loan",
-            "link": "/loans/personal-loan"
+            "link": "loans/personal-loan"
           },
           {
             "name": "Home Loan",

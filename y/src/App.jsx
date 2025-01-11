@@ -11,6 +11,7 @@ import Navbar from "./components/navbar/navbar";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import MainContainer from "./container/container";
 import Footer from "./components/footer/footer";
+import PesonalLoan from "./pages/loans/personalLoan";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -23,6 +24,10 @@ function App() {
           <Route path="/" element={<Home mainData={data} />} />
           <Route path="/about-us" element={<AboutUs mainData={data} />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route
+            path="loans/personal-loan"
+            element={<PesonalLoan mainData={data} />}
+          />
         </Routes>
         <Footer />
       </Router>
