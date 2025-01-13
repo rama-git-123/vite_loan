@@ -40,9 +40,9 @@ const Navbar = () => {
                 <ul className="dropdown-menu">
                   {item.submenu?.map((submenuItem, index) => (
                     <li key={index}>
-                      <a className="dropdown-item" href="#">
+                      <Link className="dropdown-item" to={submenuItem.link}>
                         {submenuItem.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

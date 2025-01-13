@@ -1,0 +1,64 @@
+{
+    "navTabs": [
+      { "name": "OVERVIEW", "link": "#" },
+      { "name": "FEATURES", "link": "#" },
+      { "name": "ELIGIBILITY", "link": "#" },
+      { "name": "DOCUMENTS", "link": "#" },
+      { "name": "EMI CALCULATOR", "link": "#" },
+      { "name": "FEES AND CHARGES", "link": "#" },
+      { "name": "REVIEWS", "link": "#" },
+      { "name": "FAQ's", "link": "#" }
+    ],
+    "personalLoanFeatures": {
+      "title": "Personal Loan Features",
+      "features": [
+        {
+          "icon": "icon1.png",
+          "description": "Offers for New Customers"
+        },
+        {
+          "icon": "icon2.png",
+          "description": "3 Unique Variants"
+        },
+        {
+          "icon": "icon3.png",
+          "description": "Loan of up to Rs. 40 Lakh"
+        },
+        {
+          "icon": "icon4.png",
+          "description": "Tenure of up to 84 Months"
+        },
+        {
+          "icon": "icon5.png",
+          "description": "No Guarantor / Collateral"
+        },
+        {
+          "icon": "icon6.png",
+          "description": "No Hidden Charges"
+        }
+      ]
+    },
+    "featuresAndBenefits": {
+      "title": "Features and Benefits of our Personal Loan",
+      "description": "A personal loan is an unsecured loan that is not backed by collateral or security. This makes it a flexible financing option, as there are no limitations on its use.",
+      "benefits": [
+        {
+          "title": "Debt consolidation",
+          "description": "Combining multiple debts into a single loan with a lower interest rate to save money on interest payments and make it easier to manage debts."
+        },
+        {
+          "title": "Home renovation",
+          "description": "Using a personal loan to fund home renovation projects can increase the value of your home and improve your living conditions."
+        },
+        {
+          "title": "Medical expenses",
+          "description": "If you have unexpected medical expenses, such as emergency surgery or hospitalization, a personal loan can help cover the costs."
+        },
+        {
+          "title": "Emergency expenses",
+          "description": "A personal loan can help cover unexpected expenses like medical emergencies or car repairs to avoid financial hardship."
+        }
+      ]
+    }
+  }
+  
