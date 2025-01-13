@@ -33,6 +33,11 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-family: 'Montserrat';
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat';
+  font-weight: 600;
 }
 
 button {
@@ -45,6 +50,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  
 }
 button:hover {
   border-color: #646cff;
@@ -53,7 +59,19 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../src/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../src/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
