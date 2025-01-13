@@ -169,19 +169,19 @@
            "title":"Life Insurance",
            "description":"Protect Your Loved One's Future With Our Reliable Life Insurance Plans.",
            "link":"Starting from ₹ 450/month*",
-           "image": "src/assets/images/lifeinsurance.webp"
+           "image": "src/assets/images/life-insurance.jpg"
         },
         {
            "title":"Health Insurance",
            "description":"Ensuring Your Health Is In Good Hands - Explore Our Top-notch Insurance Solutions.",
            "link":"Starting from ₹ 450/month*",
-           "image": "src/assets/images/health.webp"
+           "image": "src/assets/images/health-insurance.jpg"
         },
         {
            "title":"General Insurance",
            "description":"Insurance Made Easy - Your Protection, Our Expertise.",
            "link":"Starting from ₹ 450/month*",
-           "image": "src/assets/images/general-insurance-service.jpg"
+           "image": "src/assets/images/general-insurance.jpg"
         }
        ],
        "advantage":[
