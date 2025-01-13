@@ -1,7 +1,7 @@
 import "./insuranceSection.scss";
-import healthImage from "../../assets/images/health.webp";
-import healthImage1 from "../../assets/images/lifeinsurance.webp";
-import healthImage2 from "../../assets/images/general-insurance-service.jpg";
+import healthImage from "../../assets/images/health-insurance.jpg";
+import healthImage1 from "../../assets/images/life-insurance.jpg";
+import healthImage2 from "../../assets/images/general-insurance.jpg";
 const InsuranceSection = ({ mainData }) => {
   // const imagesLocal = () =>{
   //   if ()

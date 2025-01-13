@@ -1,5 +1,5 @@
 import "./advantageSection.scss";
-import AdvantageImage from "../../assets/images/advantage.png";
+import AdvantageImage from "../../assets/images/advantage.jpg";
 const AdvantageSection = ({ mainData }) => {
   return (
     <div className="advantage-section">
