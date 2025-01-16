@@ -397,3 +397,9 @@
   color: #000000db!important;
   text-transform: uppercase;
 }
+.faq .accordion-item{
+  margin: 20px 0px;
+    padding: 10px 0px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important;
+    border-radius: 8px !important;
+}
