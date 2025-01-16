@@ -1,3 +1,4 @@
+import "../loanReview/loanReview.scss";
 const LoanReview = () => {
   return (
     <div class="container">

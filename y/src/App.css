@@ -131,6 +131,194 @@
   /* background: #eeeeee; */
 }
 }
+/* credit card section */
+.credit-card{
+  .credit-card-section {
+    margin-bottom: 30px;
+  }
+
+  .credit-card-section h2 {
+    margin-bottom: 20px;
+  }
+
+  .credit-card-section p {
+    margin-bottom: 15px;
+  }
+
+  .credit-card-types {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .credit-card-type {
+    width: 20%;
+    text-align: center;
+  }
+
+  .credit-card-features {
+    margin-top: 30px;
+  }
+
+  .credit-card-features ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .credit-card-features li {
+    margin-bottom: 10px;
+  }
+
+  .credit-card-benefits {
+    margin-top: 30px;
+  }
+
+  .credit-card-eligibility {
+    margin-top: 30px;
+  }
+
+  .credit-card-documents {
+    margin-top: 30px;
+  }
+
+  .apply-button {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .card-c{
+    background: #ff403f12;
+        border: none;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  .card-icon2{
+    font-size: 2.5rem;
+    color: #fe5309;
+  }
+  .credit-card-eligibility {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eaf1ff;
+  }
+
+  .apply-button {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+}
+.became-partner-container{
+  .info-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    border: none;
+    border-radius: 10px;
+  }
+  .info-card:hover {
+    transform: scale(1.05);
+  }
+  .stats {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  .custom-checkbox {
+    font-size: 0.9rem;
+  }
+  .feature-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .feature-card h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  .illustration img {
+    width: 100%;
+  }
+  .partner-section {
+    margin-bottom: 30px;
+  }
+
+  .partner-section h2 {
+    margin-bottom: 20px;
+  }
+
+  .partner-section p {
+    margin-bottom: 15px;
+  }
+
+  .partner-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .partner-option {
+    text-align: center;
+    padding: 20px;
+    width: 20%;
+    background: #f1f1f1;
+  }
+
+  .partner-option img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .partner-description {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .training-section {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .training-section h3 {
+    margin-bottom: 20px;
+  }
+
+  .training-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .training-section li {
+    margin-bottom: 10px;
+  }
+
+  .training-section img {
+    float: right;
+    margin-left: 20px;
+    max-width: 200px;
+  }
+  .card-icon2{
+    font-size: 2.5rem;
+    color: #fe5309;
+  }
+}
 .contct-us{
   .contact-container {
     display: flex;

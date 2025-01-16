@@ -12,6 +12,8 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import MainContainer from "./container/container";
 import Footer from "./components/footer/footer";
 import PesonalLoan from "./pages/loans/personalLoan";
+import CreditCard from "./pages/creditCard";
+import BeacamePartner from "./pages/becamePartner";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -23,6 +25,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Home mainData={data} />} />
           <Route path="/about-us" element={<AboutUs mainData={data} />} />
+          <Route
+            path="/credit-cards"
+            element={<CreditCard mainData={data} />}
+          />
+          <Route
+            path="/become-a-partner"
+            element={<BeacamePartner mainData={data} />}
+          />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route
             path="loans/personal-loan"

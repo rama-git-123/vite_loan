@@ -9,6 +9,14 @@
       { "name": "REVIEWS", "link": "#" },
       { "name": "FAQ's", "link": "#" }
     ],
+    "creditNavTabs": [
+      { "name": "OVERVIEW", "link": "#" },
+      { "name": "FEATURES", "link": "#" },
+      { "name": "ELIGIBILITY", "link": "#" },
+      { "name": "DOCUMENTS", "link": "#" },
+      { "name": "REVIEWS", "link": "#" },
+      { "name": "FAQ's", "link": "#" }
+    ],
     "personalLoanFeatures": {
       "title": "Personal Loan Features",
       "features": [
