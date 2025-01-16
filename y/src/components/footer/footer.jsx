@@ -9,7 +9,7 @@ const Footer = () => {
         <div class="row">
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <p>
-              Established in 2024, Daitapati Finance has emerged as a dynamic
+              Established in 2024, My Scope has emerged as a dynamic
               and trustworthy financial institution, dedicated to providing
               comprehensive financial solutions across India. Under the
               visionary leadership of our Chairman, Bhabani Prasad Das

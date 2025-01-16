@@ -390,3 +390,10 @@
   box-shadow: 0 6px 10px 0 rgba(67, 118, 186, .06)!important;
   padding: 22px;
 }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-size: 18px!important;
+  font-weight: 500!important;
+  color: #000000db!important;
+  text-transform: uppercase;
+}

@@ -3,7 +3,7 @@ import AdvantageImage from "../../assets/images/advantage.jpg";
 const AdvantageSection = ({ mainData }) => {
   return (
     <div className="advantage-section">
-      <h2>Advantages of Daitapati Finance</h2>
+      <h2>Advantages of My Scope</h2>
       <div className="row">
         <div className="col-md-5">
           <img src={AdvantageImage} />
