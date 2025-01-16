@@ -376,6 +376,15 @@
 .read-the-docs {
   color: #888;
 }
+.navbar .btn{
+  color: #e73f4e !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  background: rgba(231, 63, 78, .11) !important;
+  border: none !important;
+  text-transform: uppercase;
+}
 .btn{
   color: #e73f4e !important;
   font-size: 16px !important;
@@ -398,8 +407,15 @@
   text-transform: uppercase;
 }
 .faq .accordion-item{
-  margin: 20px 0px;
+  margin: 14px 0px;
     padding: 10px 0px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important;
     border-radius: 8px !important;
+}
+.faq .accordion-button{
+  background-color: #fff !important;
+  box-shadow: none !important;
+  font-size: 20px !important;
+  font-weight: 500;
+  color: #000 !important;
 }
