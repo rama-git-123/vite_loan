@@ -20,7 +20,7 @@ const AboutUs = ({ mainData }) => {
               INDIA'S LEADING LOAN DISTRIBUTION CHANNEL COMPANY
             </p>
             <p>
-              About Us Established in 2024, Daitapati Finance has emerged as a
+              About Us Established in 2024, My Scope has emerged as a
               dynamic and trustworthy financial institution, dedicated to
               providing comprehensive financial solutions across India. Under
               the visionary leadership of our Chairman, Bhabani Prasad Das
@@ -36,7 +36,7 @@ const AboutUs = ({ mainData }) => {
               solutions such as Systematic Investment Plans (SIP), Mutual Funds
               (MF), Fixed Deposits (FD), Recurring Deposits (RD), Life Insurance
               (LI), General Insurance (GI), and Health Insurance (HI). At
-              Daitapati Finance, we aim to empower our clients by simplifying
+              My Scope, we aim to empower our clients by simplifying
               financial complexities and delivering personalized solutions. With
               a foundation of transparency, integrity, and customer
               satisfaction, we are setting new benchmarks in the financial
@@ -49,7 +49,7 @@ const AboutUs = ({ mainData }) => {
             <div class="col-md-3 mb-4">
               <div class="card shadow border-0">
                 <div class="card-body">
-                  <h5 class="card-title text-danger">Daitapati Finance</h5>
+                  <h5 class="card-title text-danger">My Scope</h5>
                   <p class="card-text">
                     Your one-stop shop for comprehensive financial solutions.
                   </p>
@@ -82,7 +82,7 @@ const AboutUs = ({ mainData }) => {
                 <div class="card-body">
                   <h5 class="card-title text-danger">Expertise</h5>
                   <p class="card-text">
-                    Founded by financial professionals with 1+ years of
+                    Founded by financial professionals with 5+ years of
                     experience.
                   </p>
                 </div>
