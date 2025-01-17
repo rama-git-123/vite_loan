@@ -1,6 +1,10 @@
 import BecomePartnerImage from "../assets/images/bacome-1.webp";
 import BecomePartnerImage1 from "../assets/images/dsa-1.png";
-const BeacamePartner = () => {
+import Faq from "../components/faq/faq";
+import contactImage from "../assets/images/contact-number-icon.png";
+import panCardImage from "../assets/images/pan-card-icon.png";
+import gstImage from "../assets/images/gst-doc-icon.png";
+const BeacamePartner = ({ mainData }) => {
   return (
     <div className="became-partner-container">
       <div class="container my-5">
@@ -253,6 +257,258 @@ const BeacamePartner = () => {
           </ul>
           <img src="dsa_training_image.jpg" alt="DSA Training" />
         </div>
+      </div>
+      {/* section-3 */}
+      <div class="container">
+        <div class="section-container">
+          <h2 className="margin-b-2">
+            Documents Required for DSA Registration
+          </h2>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="document-card">
+                <img src={contactImage} alt="Contact Number" />
+                <p>Contact Number</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="document-card">
+                <img src={panCardImage} alt="PAN Card" />
+                <p>PAN Card</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="document-card">
+                <img src={gstImage} alt="GST Document" />
+                <p>GST Doc. (for Firms)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-container">
+          <h2 className="margin-b-2">
+            What Are The Eligibility Criteria For The Ruloans DSA Registration
+            Process?
+          </h2>
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="eligibility-card">
+                <h5>Age</h5>
+                <p>You must be over 25 years of age.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="eligibility-card">
+                <h5>Nationality</h5>
+                <p>You must be a Resident Citizen of India</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="eligibility-card">
+                <h5>Educational Qualifications</h5>
+                <p>
+                  There are no educational requirements to qualify as a Ruloans
+                  Loan DSA Partner
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="eligibility-card">
+                <h5>Professional Qualifications</h5>
+                <p>
+                  Whether you are a working professional or a business owner,
+                  you are welcome to register as a Ruloans Loan DSA Franchise
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-container">
+          <h2 className="margin-b-2">Process Of Ruloans DSA Registration</h2>
+          <div class="process-card">
+            <p>
+              Registering to partner with Ruloans makes for a good start to a
+              successful DSA career. This guide will walk you each step through
+              the Online Loan DSA Registration as you begin and grow your
+              business.
+            </p>
+            {/* Add more content for the "Process Of Ruloans DSA Registration" section here */}
+          </div>
+        </div>
+      </div>
+      {/* section -4 */}
+      <div class="container py-5">
+        <h2 class="text-center mb-4">Process Of Ruloans DSA Registration</h2>
+        <p class="text-center margin-b-2">
+          Registering to partner with Ruloans makes for a good start to a
+          successful DSA career. This guide will walk you each step through the
+          Online Loan DSA Registration as you begin and grow your business.
+        </p>
+
+        <div class="row gy-5 justify-content-center">
+          <div class="col-md-3">
+            <div class="step-box">
+              <div class="step-number">1</div>
+              <h5 class="fw-bold">Apply</h5>
+              <p>
+                Click on 'Apply Now' and fill in the Loan DSA Partner
+                registration details, and submit along with documents.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1 d-flex align-items-center">
+            <div class="dotted-line w-100"></div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="step-box">
+              <div class="step-number">2</div>
+              <h5 class="fw-bold">Expect a Call</h5>
+              <p>
+                The Ruloans support team will call you to guide, and coordinate
+                a meeting with you.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1 d-flex align-items-center">
+            <div class="dotted-line w-100"></div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="step-box">
+              <div class="step-number">3</div>
+              <h5 class="fw-bold">Meet</h5>
+              <p>
+                At the meeting, a Ruloans Manager will explain to you all you
+                need to know including the process to follow while generating
+                leads.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1 d-flex align-items-center">
+            <div class="dotted-line w-100"></div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="step-box">
+              <div class="step-number">4</div>
+              <h5 class="fw-bold">Sign DSA Agreement</h5>
+              <p>
+                Once signed and stamped, you will be an official Ruloans Loan
+                DSA Partner running a Loan DSA Franchise.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <button class="apply-now-btn">Apply Now</button>
+        </div>
+      </div>
+      {/* section-5 */}
+      <div class="container py-5">
+        <h2 class="text-center mb-4">
+          Why Partner With Ruloans? - Benefits And Perks
+        </h2>
+        <p class="text-center">
+          Ruloans Distribution Services Private Limited (RDSPL), a one-stop-shop
+          for all types of Loans, Credit Cards, Fixed Deposits, and Insurance
+          covers 4000+ cities in India to serve 500 million under-served
+          borrowers. Ruloans' 25+ years' financial products distribution legacy,
+          265+ partner banks and NBFCs, and yearly business of Rs 30,000+ crores
+          bear testimony to a successful journey in the world of finance.
+        </p>
+        <p class="text-center">
+          Other than the above, the following are the reasons why you should go
+          for Online Loan DSA Registration to partner with Ruloans as a Loan DSA
+          Partner:
+        </p>
+
+        <div class="row text-center gy-4">
+          <div class="col-md-3">
+            <div class="icon-box">
+              <img src="https://via.placeholder.com/50" alt="Icon" />
+              <p class="icon-title">Investment Free</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-box">
+              <img src="https://via.placeholder.com/50" alt="Icon" />
+              <p class="icon-title">Instant Pay-outs</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-box">
+              <img src="https://via.placeholder.com/50" alt="Icon" />
+              <p class="icon-title">High Potential Industry</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-box">
+              <img src="https://via.placeholder.com/50" alt="Icon" />
+              <p class="icon-title">Guaranteed Success</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-box">
+              <img src="https://via.placeholder.com/50" alt="Icon" />
+              <p class="icon-title">Channel Partner Recognition</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-box">
+              <img src="https://via.placeholder.com/50" alt="Icon" />
+              <p class="icon-title">Easy Process</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="center-image">
+          <img src="https://via.placeholder.com/150" alt="Helping Image" />
+        </div>
+
+        <h3 class="text-center mb-4">Features And Earnings of DSA Program</h3>
+        <p class="text-center">
+          In your role as a Ruloans Business Partner in our Loan DSA Partner
+          program as a Loan DSA Franchise, you do the following:
+        </p>
+
+        <div class="row text-center gy-4">
+          <div class="col-md-3">
+            <div class="icon-box">
+              <img src="https://via.placeholder.com/50" alt="Icon" />
+              <p class="icon-title">Identify Clients</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-box">
+              <img src="https://via.placeholder.com/50" alt="Icon" />
+              <p class="icon-title">Check and Verify Leads</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-box">
+              <img src="https://via.placeholder.com/50" alt="Icon" />
+              <p class="icon-title">Help Pick Finance Provider</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-box">
+              <img src="https://via.placeholder.com/50" alt="Icon" />
+              <p class="icon-title">Expect Early Loan Disbursals</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <Faq mainData={mainData} />
       </div>
     </div>
   );

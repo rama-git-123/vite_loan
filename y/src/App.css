@@ -130,6 +130,20 @@
   top: 0;
   /* background: #eeeeee; */
 }
+.loan-nav {
+  position: relative;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Sticky nav styles */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #ffffff; /* Add your preferred background color */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
 }
 /* credit card section */
 .credit-card{
@@ -318,6 +332,130 @@
     font-size: 2.5rem;
     color: #fe5309;
   }
+  .section-container {
+    margin-bottom: 30px;
+  }
+
+  .document-card {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .document-card img {
+    /* width: 50px;
+    height: 50px; */
+    margin-bottom: 10px;
+  }
+
+  .eligibility-card {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 230px;
+  }
+
+  .process-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  .step-box {
+    background-color: #f8f9fc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  .step-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    color: #007bff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .dotted-line {
+    height: 2px;
+    background: repeating-linear-gradient(
+      90deg,
+      #007bff,
+      #007bff 5px,
+      transparent 5px,
+      transparent 10px
+    );
+  }
+
+  .apply-now-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .apply-now-btn:hover {
+    background-color: #ff5252;
+  }
+  .icon-box {
+    background-color: #f8f9fc;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .icon-box img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon-title {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .center-image {
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .center-image img {
+    width: 150px;
+  }
+}
+.all-insurance-container{
+  .life-insurance{
+    ul{
+      padding: 0;
+      padding-left: 20px;
+      list-style: disc;
+      li{
+        line-height: 30px;
+        font-size: 14px;
+        
+      }
+    }
+  }
+  
 }
 .contct-us{
   .contact-container {

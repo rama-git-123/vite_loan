@@ -1,11 +1,28 @@
 import { Link, useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import Breadcrumb from "../../components/breadcrumb/breadcrumb";
 import LoansData from "../../data/loan.json";
 import EMICalculator from "../../components/emicalculator/emicalculator";
 import Faq from "../../components/faq/faq";
 import LoanReview from "../../components/loanReview/loanReview";
 const PesonalLoan = ({ mainData }) => {
+  const [isSticky, setIsSticky] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Add sticky class when scrolled past a certain point
+      setIsSticky(window.scrollY > 50);
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className=" container personal-loan">
       <Breadcrumb
@@ -13,7 +30,11 @@ const PesonalLoan = ({ mainData }) => {
         page={"Personal Loan"}
         //subPage={"Personal Loan"}
       />
-      <nav class="nav nav-tabs justify-content-center border-bottom-0 loan-nav">
+      <nav
+        className={`nav nav-tabs justify-content-center border-bottom-0 loan-nav ${
+          isSticky ? "sticky-nav" : ""
+        }`}
+      >
         {LoansData?.navTabs?.map((item, index) => (
           <Link
             to={item?.link}
@@ -22,9 +43,6 @@ const PesonalLoan = ({ mainData }) => {
           >
             {item?.name}
           </Link>
-          // <a class="nav-link active" href="#">
-          //   {item.name}
-          // </a>
         ))}
       </nav>
 

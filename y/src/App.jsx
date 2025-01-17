@@ -14,6 +14,10 @@ import Footer from "./components/footer/footer";
 import PesonalLoan from "./pages/loans/personalLoan";
 import CreditCard from "./pages/creditCard";
 import BeacamePartner from "./pages/becamePartner";
+import AllInsuarance from "./pages/insurance/allInsurance";
+import LifeInsuarance from "./pages/insurance/lifeInsurance";
+import HealthInsuarance from "./pages/insurance/healthInsurance";
+import GeneralInsuarance from "./pages/insurance/generalInsurance";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -37,6 +41,22 @@ function App() {
           <Route
             path="loans/personal-loan"
             element={<PesonalLoan mainData={data} />}
+          />
+          <Route
+            path="insurance/All-Insurance"
+            element={<AllInsuarance mainData={data} />}
+          />
+          <Route
+            path="insurance/Health-Insurance"
+            element={<HealthInsuarance mainData={data} />}
+          />
+          <Route
+            path="insurance/life-insurance"
+            element={<LifeInsuarance mainData={data} />}
+          />
+          <Route
+            path="insurance/General-Insurance"
+            element={<GeneralInsuarance mainData={data} />}
           />
         </Routes>
         <Footer />

@@ -82,19 +82,19 @@
         "submenu": [
             {
               "name": "All Insurance",
-              "link": "All-Insurance"
+              "link": "insurance/All-Insurance"
             },
             {
               "name": "Life-Insurance",
-              "link": "/loans/home-loan"
+              "link": "insurance/life-insurance"
             },
             {
               "name": "Health Insurance",
-              "link": "Health-Insurance"
+              "link": "insurance/Health-Insurance"
             },
             {
               "name": "General Insurance",
-              "link": "General-Insurance"
+              "link": "insurance/General-Insurance"
             }
             
           ]
