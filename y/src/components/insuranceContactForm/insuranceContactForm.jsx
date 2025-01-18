@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import emailjs from "emailjs-com";
 
-const InsuranceContactForm = () => {
+const InsuranceContactForm = ({ title }) => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -48,9 +48,7 @@ const InsuranceContactForm = () => {
         className="card p-4"
         style={{ backgroundColor: "#3b5998", color: "white" }}
       >
-        <h2 className="text-center">
-          We provide the best value Life Insurance
-        </h2>
+        <h2 className="text-center">We provide the best value {title}</h2>
         <p className="text-center">
           Simple steps you can take to improve your financial well-being for the
           rest of your life.

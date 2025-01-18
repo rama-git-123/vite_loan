@@ -13,7 +13,7 @@ const LifeInsuarance = ({ mainData }) => {
       />
 
       <div className="container life-insurance">
-        <InsuranceContactForm />
+        <InsuranceContactForm title={"life Insurance"} />
         <h3 className="margin-t-2 margin-b-2">What is Life Insurance?</h3>
         <p>
           Life insurance is a financial contract or arrangement between an
