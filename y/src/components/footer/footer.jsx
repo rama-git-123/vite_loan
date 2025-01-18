@@ -4,79 +4,150 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer class="bg-darkk text-white pt-5 pb-4 footer-bg">
-      <div class="container text-center text-md-start">
-        <div class="row">
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <p>
-              Established in 2024, My Scope has emerged as a dynamic
-              and trustworthy financial institution, dedicated to providing
-              comprehensive financial solutions across India. Under the
-              visionary leadership of our Chairman, Bhabani Prasad Das
-              Mahapatra, we specialize in offering a wide range of secured and
-              unsecured loan products tailored to meet diverse needs.
-            </p>
-            <Link className="navbar-brand" to="/">
-              <img src={logo} width="200" />
-            </Link>
-          </div>
-
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold">Quick Links</h6>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#" class="text-white text-decoration-none">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <h6 class="text-uppercase fw-bold">Contact</h6>
+    <footer class="footer">
+      <div class="d-flex justify-content-center py-2 border-bottom-1 top-bg">
+        <a href="#" class="mx-3">
+          DSA Partner
+        </a>
+        <a href="#" class="mx-3">
+          Direct Selling Agent
+        </a>
+        <a href="#" class="mx-3">
+          Credit Card
+        </a>
+        <a href="#" class="mx-3">
+          Car Refinance
+        </a>
+        <a href="#" class="mx-3">
+          DSA Loan
+        </a>
+        <a href="#" class="mx-3">
+          DSA Loan Agent
+        </a>
+        <a href="#" class="mx-3">
+          Personal EMI Calculator
+        </a>
+        <a href="#" class="mx-3">
+          Become Loan DSA
+        </a>
+      </div>
+      <div class="container">
+        <div class="row text-center text-md-start py-4">
+          <div class="col-md-3">
+            <img src={logo} width="200" />
             <p>
               Address-307, 3rd Floor, Nexus Esplanade Mall, Rasulgarh,
               Bhubaneshwar-751010
             </p>
-            <p>Phone-myscope435@gmail.com</p>
-            <p>9861346171</p>
           </div>
 
-          <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-md-0 mb-4">
-            <h6 class="text-uppercase fw-bold">Follow Us</h6>
-            <a href="#" class="text-white me-4">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="text-white me-4">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="text-white me-4">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="text-white me-4">
-              <i class="fab fa-linkedin"></i>
-            </a>
+          <div class="col-md-2">
+            <h6 class="fw-bold">Company</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">News</a>
+              </li>
+              <li>
+                <a href="#">Grow With Us</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Data Storage Policy</a>
+              </li>
+              <li>
+                <a href="#">Terms of Service</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h6 class="fw-bold">Insurance</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">Life Insurance</a>
+              </li>
+              <li>
+                <a href="#">Health Insurance</a>
+              </li>
+              <li>
+                <a href="#">General Insurance</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h6 class="fw-bold">Loans</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">Home Loan</a>
+              </li>
+              <li>
+                <a href="#">Personal Loan</a>
+              </li>
+              <li>
+                <a href="#">Business Loan</a>
+              </li>
+              <li>
+                <a href="#">Car Loan</a>
+              </li>
+              <li>
+                <a href="#">Car Refinance</a>
+              </li>
+              <li>
+                <a href="#">Used Car Loan</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h6 class="fw-bold">DSA</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">Personal Loan DSA</a>
+              </li>
+              <li>
+                <a href="#">Home Loan DSA</a>
+              </li>
+              <li>
+                <a href="#">Business Loan DSA</a>
+              </li>
+              <li>
+                <a href="#">Loan Against Property DSA</a>
+              </li>
+              <li>
+                <a href="#">Education Loan DSA</a>
+              </li>
+              <li>
+                <a href="#">Auto Loan DSA</a>
+              </li>
+              <li>
+                <a href="#">Credit Card DSA</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-
-      <div class="text-center p-3">
-        © {currentYear} Daitapati Finance. All Rights Reserved.
+      <div class="d-flex justify-content-between align-items-center py-3 border-top-1 bottom-bg">
+        <p class="mb-0">© {currentYear} My scope. All Rights Reserved.</p>
+        <p class="mb-0">
+          contact : <a href="#">9861346171</a>
+        </p>
+        <div class="social-icons">
+          <a href="#" class="bi bi-whatsapp"></a>
+          <a href="#" class="bi bi-x"></a>
+          <a href="#" class="bi bi-facebook"></a>
+          <a href="#" class="bi bi-instagram"></a>
+          <a href="#" class="bi bi-youtube"></a>
+          <a href="#" class="bi bi-envelope"></a>
+        </div>
       </div>
     </footer>
   );
