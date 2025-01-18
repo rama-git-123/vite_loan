@@ -143,6 +143,9 @@
   z-index: 1000;
   background-color: #ffffff; /* Add your preferred background color */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+  width: 100vw;
+  padding: 10px;
+  margin-left: calc(-50vw + 50%);
 }
 }
 /* credit card section */
@@ -232,6 +235,17 @@
   .apply-button {
     margin-top: 20px;
     text-align: center;
+  }
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff; /* Add your preferred background color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+    width: 100vw;
+    padding: 10px;
+    margin-left: calc(-50vw + 50%);
   }
 
 }

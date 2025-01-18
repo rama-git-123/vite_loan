@@ -1,14 +1,45 @@
 import { Link, useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import Breadcrumb from "../components/breadcrumb/breadcrumb";
 import LoanReview from "../components/loanReview/loanReview";
 import LoansData from "../data/loan.json";
 import Faq from "../components/faq/faq";
 const CreditCard = ({ mainData }) => {
+  const [isSticky, setIsSticky] = useState(false);
   const location = useLocation();
+  useEffect(() => {
+    const handleScroll = () => {
+      // Add sticky class when scrolled past a certain point
+      setIsSticky(window.scrollY > 50);
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="container credit-card margin-t-2">
       <Breadcrumb location={location} page={"Credit cards"} />
-      <nav class="nav nav-tabs justify-content-center border-bottom-0 loan-nav">
+      <nav
+        className={`nav nav-tabs justify-content-center border-bottom-0 loan-nav ${
+          isSticky ? "sticky-nav" : ""
+        }`}
+      >
+        {LoansData?.creditNavTabs?.map((item, index) => (
+          <Link
+            to={item?.link}
+            className={`nav-item nav-link ${index === 0 ? "active" : ""}`}
+            key={index}
+          >
+            {item?.name}
+          </Link>
+        ))}
+      </nav>
+      {/* <nav class="nav nav-tabs justify-content-center border-bottom-0 loan-nav">
         {LoansData?.creditNavTabs?.map((item, index) => (
           <Link
             to={item?.link}
@@ -21,7 +52,8 @@ const CreditCard = ({ mainData }) => {
           //   {item.name}
           // </a>
         ))}
-      </nav>
+      </nav> */}
+
       <div class="container my-5">
         <div class="credit-card-section">
           <h2>What is a Credit Card?</h2>
