@@ -67,6 +67,46 @@
           "description": "A personal loan can help cover unexpected expenses like medical emergencies or car repairs to avoid financial hardship."
         }
       ]
+    },
+    "homeLoanFeatures": {
+      "title": "Home Loan Features",
+      "features": [
+        {
+          "icon": "icon1.png",
+          "description": "Attractive Interest Rates"
+        },
+        {
+          "icon": "icon2.png",
+          "description": "Minimal Documentation"
+        },
+        {
+          "icon": "icon3.png",
+          "description": "30 Years of Tenure"
+        }
+       
+      ]
+    },
+    "homeLoanFeaturesAndBenefits": {
+      "title": "Features and Benefits of our Home Loan",
+      "description":"A vast array of institutions offer you the best home loan rates at the most competitive rates and affordable EMIs.",
+      "benefits": [
+        {
+          "title": "Home Construction Loan",
+          "description": "If you have a plot of land and lack financial support to construct a home on that piece of property, you may choose a house construction loan. Such borrowing is mainly made to construct or repair a major part of your home."
+        },
+        {
+          "title": "Home Extension Loan",
+          "description": "Should you already own a home, and feel the need to extend the building, add an annexe, or build another floor, etc., Home Extension Loan is your go-to option that finances such needs."
+        },
+        {
+          "title": "Home Improvement Loan",
+          "description": "All of us wish to improve and upgrade our homes for a better life. From your old-age furniture, fixtures to faulty lightning systems, Home Improvement Loan funds all your plans."
+        },
+        {
+          "title": "NRI Home Loan",
+          "description": "If you are a patriot, a Non-Resident Indian, and wish to own residential property in India, NRI Home Loan is your answer. Though the formalities for application may be a little different."
+        }
+      ]
     }
   }
   
