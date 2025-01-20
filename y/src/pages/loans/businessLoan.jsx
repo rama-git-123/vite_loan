@@ -62,11 +62,12 @@ const BusinessLoan = ({ mainData }) => {
         <div className="col-md-4">
           <div class="card ">
             <div class="card-body">
-              <h5 class="card-title">Get high Business Loan Eligibility</h5>
+              <h5 class="card-title">Common Documents Required</h5>
               <p class="card-text">
-                Before applying for the loan, prepare a business plan, know your
-                credit score, decide the loan amount, do some market research on
-                available business loan options, and keep the documents ready.
+                Proof of address & photo identity proof of the promoters,
+                business proof, income proof, partnership deed for partnership
+                firm, articles of association, memorandum of association, board
+                resolution, PAN card, etc.
               </p>
             </div>
           </div>
@@ -74,11 +75,13 @@ const BusinessLoan = ({ mainData }) => {
         <div className="col-md-4">
           <div class="card ">
             <div class="card-body">
-              <h5 class="card-title">Get high Business Loan Eligibility</h5>
+              <h5 class="card-title">Criteria for Business Loan Approval</h5>
               <p class="card-text">
-                Before applying for the loan, prepare a business plan, know your
-                credit score, decide the loan amount, do some market research on
-                available business loan options, and keep the documents ready.
+                Applicants should be aged between 21 to 65 years, having
+                business vintage of a minimum of 1-2 years. The minimum business
+                turnover and a minimum annual turnover as per the ITR will be
+                required. The business should be profit-making for at least the
+                last 1 year.
               </p>
             </div>
           </div>

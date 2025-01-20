@@ -155,6 +155,119 @@
           "description": "Successfully repaying a Loan Against Property can positively impact your credit score, as it demonstrates responsible borrowing behavior."
         }
       ]
+    },
+    "carLoanFeatures": {
+      "title": "Car Loan Features",
+      "features": [
+        {
+          "icon": "icon1.png",
+          "description": "Loan of up to ₹ 47 Lakh"
+        },
+        {
+          "icon": "icon2.png",
+          "description": "3 Unique Variants"
+        },
+        {
+          "icon": "icon3.png",
+          "description": "Tenure of up to 72 months"
+        },
+        {
+          "icon": "icon3.png",
+          "description": "Minimal Documentation"
+        }
+       
+      ]
+    },
+    "carLoanFeaturesAndBenefits": {
+      "title": "Features and Benefits of our Car Loan",
+      "description":"",
+      "benefits": [
+        {
+          "title": "",
+          "description": "Access to Immediate Funds"
+        },
+        {
+          "title": "",
+          "description": "Flexible Loan Tenures"
+        },
+        {
+          "title": "",
+          "description": "Fixed Interest Rates"
+        },
+        {
+          "title": "",
+          "description": "Customized Loan Amounts"
+        },
+        {
+          "title": "",
+          "description": "Convenient Monthly Repayments"
+        },
+        {
+          "title": "",
+          "description": "Potential Tax Benefits"
+        },
+        {
+          "title": "",
+          "description": "Option for New and Used Cars"
+        },
+        {
+          "title": "",
+          "description": "Ownership from Day One"
+        },
+        {
+          "title": "",
+          "description": "No Need for Full Upfront Payment"
+        },
+        {
+          "title": "",
+          "description": "Improve Credit Score through Timely Payments"
+        }
+      ]
+    },
+    "educationLoanFeatures": {
+      "title": "Education Loan Features",
+      "features": [
+        {
+          "icon": "icon1.png",
+          "description": "Pre Admission Sanction"
+        },
+        {
+          "icon": "icon2.png",
+          "description": "Maximum Loan Repayment Tenure"
+        },
+        {
+          "icon": "icon3.png",
+          "description": "Tax Benefit U/s 80 (E)"
+        }
+        
+      ]
+    },
+    "educationLoanFeaturesAndBenefits": {
+      "title": "Features and Benefits of our Education Loan",
+      "description":"",
+      "benefits": [
+        {
+          "title": "Moratorium Period",
+          "description": "Repayment typically starts after the completion of the course, providing students time to secure employment."
+        },
+        {
+          "title": "Co-borrower Option ",
+          "description": "Parents or guardians can be co-borrowers to enhance eligibility."
+        },
+        {
+          "title": "Tax Benefits",
+          "description": "Repayment interest might be eligible for tax deductions under Section 80E of the Income Tax Act."
+        },
+        {
+          "title": "Multiple Courses and Institutions",
+          "description": "Loans are available for various courses, from school education to higher studies, and for institutions in India and abroad."
+        },
+        {
+          "title": "Collateral and Non-Collateral Loans",
+          "description": "Depending on the loan amount, some may require collateral, while smaller loans might not need any security."
+        }
+      
+      ]
     }
   }
   

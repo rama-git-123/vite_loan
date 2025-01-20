@@ -24,7 +24,7 @@ const CarLoan = ({ mainData }) => {
     };
   }, []);
   return (
-    <div className=" container personal-loan">
+    <div className=" container personal-loan car-loan">
       <Breadcrumb
         location={location}
         page={"Car Loan"}
@@ -47,30 +47,24 @@ const CarLoan = ({ mainData }) => {
       </nav>
 
       <div class="container mt-5">
-        <h2 class="text-center mb-4">
-          {LoansData?.loanAgainstProprtiesFeatures?.title}
-        </h2>
+        <h2 class="text-center mb-4">{LoansData?.carLoanFeatures?.title}</h2>
         <div class="row text-center g-3">
-          {LoansData?.loanAgainstProprtiesFeatures?.features.map(
-            (item, index) => (
-              <div class="col-md-4 col-lg-2" key={index}>
-                <div class="feature-card">
-                  <i class="bi bi-box-fill loan-card-icon"></i>
-                  <p class="mb-0 loan-card-text">{item.description}</p>
-                </div>
+          {LoansData?.carLoanFeatures?.features.map((item, index) => (
+            <div class="col-md-4 col-lg-2" key={index}>
+              <div class="feature-card">
+                <i class="bi bi-box-fill loan-card-icon"></i>
+                <p class="mb-0 loan-card-text">{item.description}</p>
               </div>
-            )
-          )}
+            </div>
+          ))}
         </div>
       </div>
 
       <div class="container mt-5">
-        <h3 class="mb-3">
-          {LoansData?.loanAgainstProprtiesFeaturesAndBenefits?.title}
-        </h3>
-        <p>{LoansData?.homeLoanFeaturesAndBenefits?.description}</p>
+        <h3 class="mb-3">{LoansData?.carLoanFeaturesAndBenefits?.title}</h3>
+        <p>{LoansData?.carLoanFeaturesAndBenefits?.description}</p>
         <ul>
-          {LoansData?.loanAgainstProprtiesFeaturesAndBenefits?.benefits.map(
+          {LoansData?.carLoanFeaturesAndBenefits?.benefits.map(
             (item, index) => (
               <li key={index}>
                 <strong>{item.title}</strong>
@@ -83,7 +77,7 @@ const CarLoan = ({ mainData }) => {
       <div class="container mt-5">
         <div class="p-4 bg-light border rounded-3 d-flex justify-content-between align-items-center">
           <div>
-            <h4>Home Loan Eligibility and Documents</h4>
+            <h4>Car Loan Eligibility and Documents</h4>
             <p class="mb-0">
               Read on to know the criteria required to apply for our Home Loan.
             </p>
@@ -92,81 +86,105 @@ const CarLoan = ({ mainData }) => {
         </div>
       </div>
       <div>
-        <h2 className="margin-t-2 margin-b-2">
-          Eligibility Criteria for Loan against Property
-        </h2>
-
-        <ul>
-          <li>
-            <strong>Nationality:</strong> You need to be a Citizen of India with
-            documents to prove your claim.
-          </li>
-          <li>
-            <strong>Occupation and Income:</strong> Your lender will require you
-            to furnish details regarding your occupation and income to prove
-            your professional and financial stability to determine your
-            creditworthiness.
-          </li>
-          <li>
-            <strong>Credit History:</strong> Your three-digit Credit Score,
-            indicative of your track record in respect of repayment of loans,
-            and other forms of credit will be a deciding factor to prove your
-            eligibility for a LAP.
-          </li>
-          <li>
-            <strong>Banking Relationship:</strong> Should you have a healthy
-            relationship with your lender, you will not be disapproved for a
-            LAP. Additionally, your lender will offer you better terms and
-            conditions in respect of loan value, interest rates, period of the
-            loan, hidden charges, and processing fees.
-          </li>
-          <li>
-            <strong>Market Value of Property:</strong> Your lender retains the
-            right to decide the loan amount and terms and conditions of your
-            mortgage loan based on the market value of your collateral property.
-            Besides, the market value of the mortgaged property must be higher
-            than the loan amount calculated on the current value of your
-            property.
-          </li>
-          <li>
-            <strong>Title of Property:</strong> Your lender will require you to
-            be the current existent owner of the property, and in case of a
-            co-application, you will require to prove multiple ownership clear
-            title. Besides, the property must not be mortgaged with any other
-            financial institution.
-          </li>
-        </ul>
-        <h2 className="margin-t-2 margin-b-2">
-          Documents Required to Apply for Loan Against Property
-        </h2>
-        <li>Proof of identity/residence</li>
-        <li>Proof of income</li>
-        <li>Property-related documents</li>
-        <li>Proof of Business (for self-employed)</li>
-        <li>Account statement for the last 6 months</li>
-      </div>
-      <div>
-        <h2 className="margin-t-2 margin-b-2">
-          Loan Against Property EMI Calculator
-        </h2>
+        <h2 className="margin-t-2 margin-b-2">Car Loan Eligibility</h2>
         <p>
-          A Loan Against Property may be termed as a Mortgage Loan since to
-          avail an LAP, you need to mortgage your property to cover risk of
-          non-payment or default in repayment of the funds borrowed. For any
-          lender to approve such a borrowing, the lender will first analyse your
-          personal and financial profile, which will include criteria such
-          nationality, age, occupation, income, and market value of the
-          collateral you are willing to keep. A mortgage loan calculator then
-          calculates the financial implications of such a loan based on certain
-          parameters based on eligibility criteria to enable approval of your
-          Mortgage Loan.
+          Car loan eligibility is about whether you can get a loan to buy a car.
+          It depends on things like how much you earn, your credit score, and if
+          you have other debts. Lenders use these details to decide if you can
+          repay the loan. If you meet their criteria, you're eligible for the
+          loan; if not, you might need to wait or improve your financial
+          situation before getting a car loan.
         </p>
         <h6 className="margin-t-2 margin-b-2">
-          How is Loan Against Property EMI Calculated?
+          Car Loan Eligibility Calculator Refer to the Calculator
         </h6>
-        <h6>
-          Loan Against Property EMI (Equated Monthly Installment) is calculated
-          using the following Compound Interest formula:
+        <h6 className="margin-t-2 margin-b-2">
+          Car Loan Eligibility Criteria for Top Banks
+        </h6>
+        <p>
+          Car loan eligibility criteria vary from one bank to another, but
+          generally include factors such as your age (usually 21 to 65 years),
+          minimum income (often around INR 20,000 per month), and stable
+          employment. A good credit score, usually 650 or above, is important.
+          Some banks might require you to be a salaried employee or
+          self-employed, while others could need you to have a certain work
+          experience or business vintage. Banks also consider your existing
+          debts and liabilities to ensure you can manage the loan. Checking with
+          each bank directly or using their online eligibility calculators can
+          provide precise criteria tailored to their policies.
+        </p>
+        <h6 className="margin-t-2 margin-b-2">
+          Car Loan Eligibility for Salaried Individuals/Self-Employed
+          Individuals
+        </h6>
+        <h6 className="margin-t-2 margin-b-2">For Salaried Individuals</h6>
+        <ul>
+          <li>
+            Individuals who are at least 21 years old at the time of loan
+            application and no older than 60 at the end of the loan tenure
+          </li>
+          <li>
+            Individuals who have worked for at least two years, with at least
+            one year with the current employer
+          </li>
+          <li>
+            Individuals with a minimum earning of Rs. 3,00,000 per year,
+            including the income of the spouse/co-applicant.
+          </li>
+          <h6 className="margin-t-2 margin-b-2">
+            For Self Employed Individuals
+          </h6>
+        </ul>
+        <ul>
+          <li>
+            Individuals who are at least 21 years old at the time of application
+            and no older than 65 at the end of the loan tenure.
+          </li>
+          <li>Those who have been in business for at least two years.</li>
+          <li>Should earn at least Rs. 3,000,000 per year</li>
+        </ul>
+      </div>
+      <div>
+        <h6 className="margin-t-2 margin-b-2">
+          Documents Required to Apply for Car Loan
+        </h6>
+        <ul>
+          <li>KYC documents (Valid Photo ID Proofs)</li>
+          <li>PAN Card</li>
+          <li>Last 2 years' ITR as proof of income</li>
+          <li>Salary Slip (latest 3 months)</li>
+          <li>Salary account statement (latest 6 months)</li>
+          <li>Signature Verification Proof</li>
+        </ul>
+        <h6 className="margin-t-2 margin-b-2">EMI Calculator for Car Loan</h6>
+        <p>
+          An EMI calculator is a useful tool that can help you estimate the
+          monthly installments you will have to pay towards your used Car Loan
+          within a specific period. By using the RuLoans EMI calculator, you can
+          calculate your EMI beforehand, which can help you plan your finances
+          better. Additionally, you can check your eligibility and compare
+          different Loan options using RuLoans used Car Loan calculator.
+        </p>
+        <p>
+          Using a Car Loan EMI (Equated Monthly Installment) calculator can help
+          you estimate your monthly loan repayment amount. Follow these steps to
+          use a Car Loan EMI calculator effectively:
+        </p>
+        <ul>
+          <li>Enter Loan amount, interest rate, tenure.</li>
+          <li>Click Calculate.</li>
+          <li>View EMI, total interest, repayment.</li>
+          <li>Adjust tenure if needed.</li>
+          <li>Consider extra costs.</li>
+          <li>Check budget compatibility.</li>
+          <li>Confirm with the lender before finalizing.</li>
+        </ul>
+        <h6 className="margin-t-2 margin-b-2">
+          How is Car Loan EMI Calculated?
+        </h6>
+        <h6 className="margin-t-2 margin-b-2">
+          Car Loan EMI (Equated Monthly Installment) is calculated using the
+          following formula:
         </h6>
         <p className="margin-t-2 margin-b-2">
           EMI = [P * r * (1 + r)^n] / [(1 + r)^n - 1]
@@ -185,12 +203,12 @@ const CarLoan = ({ mainData }) => {
 
       <div class="container">
         <h2 class="text-center mb-4 margin-t-2">
-          Fees and Charges for Loan Against Property Loan
+          Fees and Charges for Car Loan
         </h2>
         <p class="text-center margin-b-2">
-          The fees and charges of property loans usually vary from lender to
-          lender and from case to case. The aforementioned table will give you a
-          fair idea of the fees and charges related to property loans:
+          The fees and charges of car loans usually vary from lender to lender
+          and from case to case. The aforementioned table will give you a fair
+          idea of the fees and charges related to car loans:
         </p>
         <table class="table table-bordered">
           <thead>
@@ -202,15 +220,15 @@ const CarLoan = ({ mainData }) => {
           <tbody>
             <tr>
               <td>Loan Processing Fees</td>
-              <td>0.25% to 2% of Loan Amount</td>
+              <td>1.5% to 4% of loan amount</td>
             </tr>
             <tr>
               <td>Loan Cancellation</td>
-              <td>Nill - 5% (according to Bank/NBFC)</td>
+              <td>Usually around Rs 5,000</td>
             </tr>
             <tr>
               <td>Stamp Duty Charges</td>
-              <td>As per the Value of the Property and State Tax</td>
+              <td>As per actuals</td>
             </tr>
             <tr>
               <td>Legal Fees</td>
@@ -218,11 +236,11 @@ const CarLoan = ({ mainData }) => {
             </tr>
             <tr>
               <td>Penal Charges</td>
-              <td>Usually 2% per month</td>
+              <td>Usually @ 2% per month; 24% p.a.</td>
             </tr>
             <tr>
               <td>EMI/ Cheque Bonus</td>
-              <td>Approx 500/-</td>
+              <td>Around Rs 400 per bounce</td>
             </tr>
           </tbody>
         </table>

@@ -149,6 +149,17 @@
   margin-left: calc(-50vw + 50%);
 }
 }
+.car-loan{
+  strong::after{
+    content: '';
+  }
+
+}
+.education-loan{
+  .card{
+    min-height: 300px;
+  }
+}
 /* credit card section */
 .credit-card{
   .credit-card-section {
