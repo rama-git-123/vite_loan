@@ -21,6 +21,9 @@ import GeneralInsuarance from "./pages/insurance/generalInsurance";
 import HomeLoan from "./pages/loans/homeLoan";
 import BusinessLoan from "./pages/loans/businessLoan";
 import LoanAgainstProprties from "./pages/loans/loanAgainastProprties";
+import CarLoan from "./pages/loans/carLoan";
+import EducationLoan from "./pages/loans/educationLoan";
+import GoldLoan from "./pages/loans/goldLoan";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -56,6 +59,15 @@ function App() {
           <Route
             path="loans/loan-against-property"
             element={<LoanAgainstProprties mainData={data} />}
+          />
+          <Route path="loans/car-loan" element={<CarLoan mainData={data} />} />
+          <Route
+            path="loans/education-loan"
+            element={<EducationLoan mainData={data} />}
+          />
+          <Route
+            path="loans/gold-loan"
+            element={<GoldLoan mainData={data} />}
           />
           <Route
             path="insurance/All-Insurance"
