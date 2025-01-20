@@ -24,9 +24,7 @@ const EMICalculator = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="text-center margin-b-2">
-        EMI Calculator for Personal Loan
-      </h2>
+      <h2 className="text-center margin-b-2">EMI Calculator for Loan</h2>
       <p className="text-center margin-b-2">
         An EMI calculator is a useful tool that can help you estimate the
         monthly installments you will have to pay towards your personal loan
