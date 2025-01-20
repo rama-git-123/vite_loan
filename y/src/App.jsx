@@ -20,6 +20,7 @@ import HealthInsuarance from "./pages/insurance/healthInsurance";
 import GeneralInsuarance from "./pages/insurance/generalInsurance";
 import HomeLoan from "./pages/loans/homeLoan";
 import BusinessLoan from "./pages/loans/businessLoan";
+import LoanAgainstProprties from "./pages/loans/loanAgainastProprties";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -51,6 +52,10 @@ function App() {
           <Route
             path="loans/business-loan"
             element={<BusinessLoan mainData={data} />}
+          />
+          <Route
+            path="loans/loan-against-property"
+            element={<LoanAgainstProprties mainData={data} />}
           />
           <Route
             path="insurance/All-Insurance"

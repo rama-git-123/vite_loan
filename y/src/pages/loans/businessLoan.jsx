@@ -30,6 +30,21 @@ const BusinessLoan = ({ mainData }) => {
         page={"Business Loan"}
         //subPage={"Personal Loan"}
       />
+      <nav
+        className={`nav nav-tabs justify-content-center border-bottom-0 loan-nav ${
+          isSticky ? "sticky-nav" : ""
+        }`}
+      >
+        {LoansData?.navTabs?.map((item, index) => (
+          <Link
+            to={item?.link}
+            className={`nav-item nav-link ${index === 0 ? "active" : ""}`}
+            key={index}
+          >
+            {item?.name}
+          </Link>
+        ))}
+      </nav>
       <h2 className="margin-t-2 margin-b-2">Business Loan</h2>
       <div className="row">
         <div className="col-md-4">
@@ -284,7 +299,7 @@ const BusinessLoan = ({ mainData }) => {
         </p>
       </div>
       {/* section */}
-      <LoanReview />
+      <LoanReview title={"Business Loan Review"} />
       <div className="container">
         <Faq mainData={mainData} />
       </div>

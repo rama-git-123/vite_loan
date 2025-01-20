@@ -1,8 +1,8 @@
 import "../loanReview/loanReview.scss";
-const LoanReview = () => {
+const LoanReview = ({ title }) => {
   return (
     <div class="container">
-      <h2 class="text-center margin-t-2 margin-b-2">Personal Loan Reviews</h2>
+      <h2 class="text-center margin-t-2 margin-b-2">{title}</h2>
 
       <div class="review-container">
         <div class="review-card">

@@ -107,6 +107,54 @@
           "description": "If you are a patriot, a Non-Resident Indian, and wish to own residential property in India, NRI Home Loan is your answer. Though the formalities for application may be a little different."
         }
       ]
+    },
+    "loanAgainstProprtiesFeatures": {
+      "title": "Loan Against Property Features",
+      "features": [
+        {
+          "icon": "icon1.png",
+          "description": "Flexible Loan Eligibility"
+        },
+        {
+          "icon": "icon2.png",
+          "description": "Loans value from Rs.10 Lakh to Rs. 5 Crore"
+        },
+        {
+          "icon": "icon3.png",
+          "description": "Loans against commercial, residential or industrial property"
+        },
+        {
+          "icon": "icon3.png",
+          "description": "Loan for your business as well as personal needs"
+        }
+       
+      ]
+    },
+    "loanAgainstProprtiesFeaturesAndBenefits": {
+      "title": "Features and Benefits of our Loan Against Property",
+      "description":"",
+      "benefits": [
+        {
+          "title": "Secured Loan",
+          "description": "The loan is secured against the value of your property. The property acts as collateral, reducing the risk for the lender. This generally leads to lower interest rates compared to unsecured loans."
+        },
+        {
+          "title": "Loan Amount",
+          "description": "The loan amount is determined based on the value of the property you pledge. Generally, you can get a higher loan amount compared to personal loans or other unsecured loans."
+        },
+        {
+          "title": "Flexible Tenure",
+          "description": "The tenure (repayment period) for a Loan Against Property is usually longer compared to other types of loans, often ranging from 5 to 20 years. This allows for lower monthly installments."
+        },
+        {
+          "title": "Multipurpose",
+          "description": "The loan amount can be used for a wide range of purposes, giving you the flexibility to address various financial needs without any restrictions."
+        },
+        {
+          "title": "Improves Credit Scores ",
+          "description": "Successfully repaying a Loan Against Property can positively impact your credit score, as it demonstrates responsible borrowing behavior."
+        }
+      ]
     }
   }
   

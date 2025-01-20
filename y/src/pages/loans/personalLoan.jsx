@@ -201,7 +201,7 @@ const PesonalLoan = ({ mainData }) => {
         </p>
       </div>
       {/* section */}
-      <LoanReview />
+      <LoanReview title={"personal loan Review"} />
       <div className="container">
         <Faq mainData={mainData} />
       </div>
