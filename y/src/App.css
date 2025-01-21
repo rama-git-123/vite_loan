@@ -42,8 +42,11 @@
   margin-bottom: 3rem;
 }
 .title-txt{
-  font-size: 1.2rem;
-  margin-bottom: 40px;
+  font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 16px;
+    fon-family: poppins;
+    font-family: 'Poppins';
 }
 .personal-loan{
   margin-top: 50px;
@@ -125,6 +128,7 @@
   font-weight: bold;
  
 }
+
 .loan-nav{
   margin-top: 50px;
   position: sticky;
@@ -686,13 +690,19 @@
   color: #888;
 }
 .navbar .btn{
-  color: #e73f4e !important;
-  font-size: 18px !important;
-  font-weight: 600 !important;
-  border-radius: 8px !important;
-  background: rgba(231, 63, 78, .11) !important;
-  border: none !important;
-  text-transform: uppercase;
+    color: #e73f4e !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    background: rgba(231, 63, 78, .11) !important;
+    border: none !important;
+    text-transform: uppercase;
+    width: 161px;
+    padding: 16px 0px;
+}
+.navbar .btn:hover{
+  background-color: #e73f4e!important;
+  color: #fff!important;
 }
 .btn{
   color: #e73f4e !important;
@@ -710,10 +720,12 @@
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  font-size: 18px!important;
-  font-weight: 500!important;
-  color: #000000db!important;
-  text-transform: uppercase;
+    font-size: 20px !important;
+    color: #000000 !important;
+    text-transform: uppercase;
+    padding: 0px 18px !important;
+    font-family: 'Poppins';
+    font-weight: 500 !important;
 }
 .faq .accordion-item{
   margin: 14px 0px;
