@@ -39,6 +39,11 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Montserrat';
   font-weight: 600 !important;
 }
+p{
+  font-family: "Poppins", serif;
+  font-style: normal;
+  color: #000;
+}
 
 button {
   border-radius: 8px;
@@ -50,7 +55,8 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-  
+  font-family: "Poppins", serif;
+  font-style: normal;
 }
 button:hover {
   border-color: #646cff;
@@ -58,6 +64,14 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+a{
+  font-family: "Poppins";
+  font-style: normal;
+}
+ul li{
+  font-family: "Poppins";
+  font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat';
@@ -70,6 +84,12 @@ button:focus-visible {
   font-family: 'Montserrat';
   src: url('../src/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
   font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url('../src/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 @media (prefers-color-scheme: light) {
