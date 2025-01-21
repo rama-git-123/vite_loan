@@ -268,6 +268,59 @@
         }
       
       ]
+    },
+    "goldLoanFeatures": {
+      "title": "Features and Benefits of our Gold Loan",
+      "features": [
+        {
+          "icon": "icon1.png",
+          "description": "Loan in just 15 minutes"
+        },
+        {
+          "icon": "icon2.png",
+          "description": "Apply with PAN or Aadhaar Card"
+        },
+        {
+          "icon": "icon3.png",
+          "description": "Loans starting from Rs.5,000"
+        },
+        {
+          "icon": "icon3.png",
+          "description": "Multiple repayment options"
+        }
+        
+      ]
+    },
+    "goldLoanFeaturesAndBenefits": {
+      "title": "Features and Benefits of our Gold Loan",
+      "description":"",
+      "benefits": [
+        {
+          "title": "Secured Loan",
+          "description": "Backed by gold collateral."
+        },
+        {
+          "title": "Quick Processing",
+          "description": "Fast approval and disbursement."
+        },
+        {
+          "title": "Flexible Loan Amount",
+          "description": "Based on pledged gold value."
+        },
+        {
+          "title": "Instant Liquidity",
+          "description": "Access funds quickly without selling gold."
+        },
+        {
+          "title": "Lower Interest Rates",
+          "description": "Secured nature leads to competitive rates."
+        },
+        {
+          "title": "Versatile Use",
+          "description": "No restrictions on how loan funds are used."
+        }
+      
+      ]
     }
   }
   

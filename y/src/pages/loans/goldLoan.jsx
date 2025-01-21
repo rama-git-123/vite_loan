@@ -47,30 +47,24 @@ const GoldLoan = ({ mainData }) => {
       </nav>
 
       <div class="container mt-5">
-        <h2 class="text-center mb-4">
-          {LoansData?.loanAgainstProprtiesFeatures?.title}
-        </h2>
+        <h2 class="text-center mb-4">{LoansData?.goldLoanFeatures?.title}</h2>
         <div class="row text-center g-3">
-          {LoansData?.loanAgainstProprtiesFeatures?.features.map(
-            (item, index) => (
-              <div class="col-md-4 col-lg-2" key={index}>
-                <div class="feature-card">
-                  <i class="bi bi-box-fill loan-card-icon"></i>
-                  <p class="mb-0 loan-card-text">{item.description}</p>
-                </div>
+          {LoansData?.goldLoanFeatures?.features.map((item, index) => (
+            <div class="col-md-4 col-lg-2" key={index}>
+              <div class="feature-card">
+                <i class="bi bi-box-fill loan-card-icon"></i>
+                <p class="mb-0 loan-card-text">{item.description}</p>
               </div>
-            )
-          )}
+            </div>
+          ))}
         </div>
       </div>
 
       <div class="container mt-5">
-        <h3 class="mb-3">
-          {LoansData?.loanAgainstProprtiesFeaturesAndBenefits?.title}
-        </h3>
-        <p>{LoansData?.homeLoanFeaturesAndBenefits?.description}</p>
+        <h3 class="mb-3">{LoansData?.goldLoanFeaturesAndBenefits?.title}</h3>
+        <p>{LoansData?.goldLoanFeaturesAndBenefits?.description}</p>
         <ul>
-          {LoansData?.loanAgainstProprtiesFeaturesAndBenefits?.benefits.map(
+          {LoansData?.goldLoanFeaturesAndBenefits?.benefits.map(
             (item, index) => (
               <li key={index}>
                 <strong>{item.title}</strong>
@@ -83,90 +77,101 @@ const GoldLoan = ({ mainData }) => {
       <div class="container mt-5">
         <div class="p-4 bg-light border rounded-3 d-flex justify-content-between align-items-center">
           <div>
-            <h4>Home Loan Eligibility and Documents</h4>
+            <h4>Gold Loan Eligibility and Documents</h4>
             <p class="mb-0">
-              Read on to know the criteria required to apply for our Home Loan.
+              Read on to know the criteria required to apply for our Gold Loan.
             </p>
           </div>
           <button class="btn btn-danger">Apply</button>
         </div>
       </div>
       <div>
-        <h2 className="margin-t-2 margin-b-2">
-          Eligibility Criteria for Loan against Property
-        </h2>
+        <h2 className="margin-t-2 margin-b-2">Eligibility Criteria</h2>
 
         <ul>
           <li>
-            <strong>Nationality:</strong> You need to be a Citizen of India with
-            documents to prove your claim.
+            <strong>Age:</strong> Typically, borrowers should be 18 years or
+            older.
           </li>
           <li>
-            <strong>Occupation and Income:</strong> Your lender will require you
-            to furnish details regarding your occupation and income to prove
-            your professional and financial stability to determine your
-            creditworthiness.
+            <strong>Ownership</strong> You must own the gold being pledged.
           </li>
           <li>
-            <strong>Credit History:</strong> Your three-digit Credit Score,
-            indicative of your track record in respect of repayment of loans,
-            and other forms of credit will be a deciding factor to prove your
-            eligibility for a LAP.
+            <strong>Gold Quality:</strong> The gold should meet the lender's
+            purity standards.
           </li>
           <li>
-            <strong>Banking Relationship:</strong> Should you have a healthy
-            relationship with your lender, you will not be disapproved for a
-            LAP. Additionally, your lender will offer you better terms and
-            conditions in respect of loan value, interest rates, period of the
-            loan, hidden charges, and processing fees.
-          </li>
-          <li>
-            <strong>Market Value of Property:</strong> Your lender retains the
-            right to decide the loan amount and terms and conditions of your
-            mortgage loan based on the market value of your collateral property.
-            Besides, the market value of the mortgaged property must be higher
-            than the loan amount calculated on the current value of your
-            property.
-          </li>
-          <li>
-            <strong>Title of Property:</strong> Your lender will require you to
-            be the current existent owner of the property, and in case of a
-            co-application, you will require to prove multiple ownership clear
-            title. Besides, the property must not be mortgaged with any other
-            financial institution.
+            <strong>Identification</strong> Valid government-issued ID for
+            identity verification.
           </li>
         </ul>
         <h2 className="margin-t-2 margin-b-2">
-          Documents Required to Apply for Loan Against Property
+          Documents Required to Apply for Gold Loan
         </h2>
-        <li>Proof of identity/residence</li>
-        <li>Proof of income</li>
-        <li>Property-related documents</li>
-        <li>Proof of Business (for self-employed)</li>
-        <li>Account statement for the last 6 months</li>
+        <ul>
+          <li>Identity and signature proof</li>
+          <li>Voter ID</li>
+          <li>Passport</li>
+          <li>Aadhaar Card</li>
+          <li>Driving License</li>
+          <li>PAN Card</li>
+          <li>Employee Identity Card (in case of government employees)</li>
+          <li>Address Proof</li>
+          <li>Rent Agreement</li>
+          <li>Bank Statement</li>
+          <li>Voter ID Card</li>
+          <li>Passport</li>
+          <li>Driving License</li>
+          <li>Telephone/Electricity/Water/Credit Card bill or Property tax</li>
+          <li>Two post-dated cheques for security purposes</li>
+          <li>Passport-size photographs</li>
+        </ul>
       </div>
       <div>
         <h2 className="margin-t-2 margin-b-2">
-          Loan Against Property EMI Calculator
+          How to Apply for Gold Loan at Ruloans?
         </h2>
         <p>
-          A Loan Against Property may be termed as a Mortgage Loan since to
-          avail an LAP, you need to mortgage your property to cover risk of
-          non-payment or default in repayment of the funds borrowed. For any
-          lender to approve such a borrowing, the lender will first analyse your
-          personal and financial profile, which will include criteria such
-          nationality, age, occupation, income, and market value of the
-          collateral you are willing to keep. A mortgage loan calculator then
-          calculates the financial implications of such a loan based on certain
-          parameters based on eligibility criteria to enable approval of your
-          Mortgage Loan.
+          To apply for a gold loan, you can follow these general steps. Keep in
+          mind that the specific process might vary depending on the lender and
+          the country you're in. Here are few points to keep in mind before
+          Applying Gold Loan:
         </p>
+        <ul>
+          <li>
+            <strong>Choose a Lender:</strong> Research and choose a reputable
+            lender that offers gold loans. This could be a bank, a financial
+            institution, or a specialized gold loan company.
+          </li>
+          <li>
+            <strong>Check Eligibility:</strong> Review the eligibility criteria
+            set by the lender. Typically, you'll need to be of a certain age and
+            own gold jewelry that meets the lender's criteria.
+          </li>
+          <li>
+            <strong>Visit the Branch or Website:</strong> You can either visit
+            the nearest branch of the lender or apply online through their
+            official website or mobile app, if available.
+          </li>
+          <li>
+            <strong>Gold Evaluation:</strong> If applying in person, bring the
+            gold you want to pledge as collateral to the lender's branch. They
+            will evaluate the gold's purity, weight, and value to determine the
+            loan amount you're eligible for. If applying online, you might need
+            to visit the branch for this step. These days, a few fintech
+            companies offer this service at the customer’s doorstep as well.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 className="margin-t-2 margin-b-2">Gold Loan EMI Calculator</h2>
+
         <h6 className="margin-t-2 margin-b-2">
           How is Loan Against Property EMI Calculated?
         </h6>
         <h6>
-          Loan Against Property EMI (Equated Monthly Installment) is calculated
-          using the following Compound Interest formula:
+          Gold Loan EMI (Equated Monthly Installment) is calculated using the
+          following Compound Interest formula:
         </h6>
         <p className="margin-t-2 margin-b-2">
           EMI = [P * r * (1 + r)^n] / [(1 + r)^n - 1]
@@ -185,12 +190,12 @@ const GoldLoan = ({ mainData }) => {
 
       <div class="container">
         <h2 class="text-center mb-4 margin-t-2">
-          Fees and Charges for Loan Against Property Loan
+          Fees and Charges for Gold Loan
         </h2>
         <p class="text-center margin-b-2">
-          The fees and charges of property loans usually vary from lender to
-          lender and from case to case. The aforementioned table will give you a
-          fair idea of the fees and charges related to property loans:
+          The fees and charges of gold loans usually vary from lender to lender
+          and from case to case. The aforementioned table will give you a fair
+          idea of the fees and charges related to gold loans:
         </p>
         <table class="table table-bordered">
           <thead>
@@ -202,27 +207,23 @@ const GoldLoan = ({ mainData }) => {
           <tbody>
             <tr>
               <td>Loan Processing Fees</td>
-              <td>0.25% to 2% of Loan Amount</td>
+              <td>0.2% to 0.6% of loan amount</td>
             </tr>
             <tr>
               <td>Loan Cancellation</td>
-              <td>Nill - 5% (according to Bank/NBFC)</td>
+              <td>1%</td>
             </tr>
             <tr>
               <td>Stamp Duty Charges</td>
-              <td>As per the Value of the Property and State Tax</td>
+              <td>As per actuals</td>
             </tr>
             <tr>
               <td>Legal Fees</td>
-              <td>As per actual</td>
+              <td>Nil</td>
             </tr>
             <tr>
               <td>Penal Charges</td>
-              <td>Usually 2% per month</td>
-            </tr>
-            <tr>
-              <td>EMI/ Cheque Bonus</td>
-              <td>Approx 500/-</td>
+              <td>Nil</td>
             </tr>
           </tbody>
         </table>
