@@ -1,5 +1,5 @@
 import "./footer.scss";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/footer-logo.png";
 import { Link } from "react-router-dom";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -138,7 +138,7 @@ const Footer = () => {
       <div class="d-flex justify-content-between align-items-center py-3 border-top-1 bottom-bg">
         <p class="mb-0">© {currentYear} My scope. All Rights Reserved.</p>
         <p class="mb-0">
-          contact : <a href="#">9861346171</a>
+          Contact : <a href="#">9861346171</a>
         </p>
         <div class="social-icons">
           <a href="#" class="bi bi-whatsapp"></a>
