@@ -1,0 +1,61 @@
+.dsa-image  {
+    height: 450px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+ 
+}
+.profession-card {
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+
+  .profession-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .profession-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .dsa{
+
+    ul{
+        list-style: disc !important;
+        margin-left: 20px !important;
+    }
+   
+  }
+  .eligibility{
+    background: #f5f9ff;
+    padding: 30px;
+    h6{
+        font-size: 1.2rem;
+        color: #ff3130;
+    }
+
+
+  }
+  .document{
+    ul{
+        
+    }
+    li{
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: bold;
+       
+    }
+    i{
+        color: #ff3130;
+        margin-right: 20px;
+    }
+
+  }
