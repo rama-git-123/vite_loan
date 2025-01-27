@@ -1,0 +1,24 @@
+.banner-container{
+    position: relative;
+    nav{
+        border: none;
+        a{
+            color: #fff;
+        }
+        li{
+            display: inline-block;
+            margin-right: 10px;
+            color: #fff;
+          
+        }
+        li:before{
+            content: '';
+            color: #fff !important;
+          
+        }
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -5,7 +5,7 @@ import InsuranceContactForm from "../../components/insuranceContactForm/insuranc
 const LifeInsuarance = ({ mainData }) => {
   const location = useLocation();
   return (
-    <div className="all-insurance-container margin-t-2">
+    <div className="all-insurance-container ">
       <Breadcrumb
         location={location}
         page={"Life Insurance"}

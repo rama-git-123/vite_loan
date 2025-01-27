@@ -5,7 +5,7 @@ import Faq from "../../components/faq/faq";
 const HealthInsuarance = ({ mainData }) => {
   const location = useLocation();
   return (
-    <div className="all-insurance-container margin-t-2">
+    <div className="all-insurance-container">
       <Breadcrumb
         location={location}
         page={"Health Insurance"}

@@ -11,8 +11,8 @@ const AboutUs = ({ mainData }) => {
 
   return (
     <div className="about-us">
+       <Breadcrumb location={location} page={"About us"} />
       <div className="container">
-        <Breadcrumb location={location} page={"About us"} />
         <div class="container mt-5">
           <div class="text-center mb-5">
             <h1>Who Are We?</h1>
