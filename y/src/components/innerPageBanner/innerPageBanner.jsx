@@ -34,6 +34,8 @@ const InnerPageBanner = ({ location }) => {
         return bannerImage1;
       case "/dsa/home-loan-dsa":
         return bannerImage2;
+      case "/dsa/business-loan-dsa":
+        return bannerImage1;
       //   case "/insurance/contact-us":
       //     return bannerImage1;
     }
