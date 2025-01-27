@@ -38,6 +38,12 @@ const InnerPageBanner = ({ location }) => {
         return bannerImage1;
       case "/dsa/loan-against-property-dsa":
         return bannerImage1;
+      case "/dsa/education-loan-dsa":
+        return bannerImage1;
+      case "/dsa/auto-loan-dsa":
+        return bannerImage1;
+      case "/dsa/credit-card-dsa":
+        return bannerImage1;
       //   case "/insurance/contact-us":
       //     return bannerImage1;
     }
