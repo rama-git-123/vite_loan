@@ -285,7 +285,7 @@ const BusinessLoanDSA = ({ mainData }) => {
       </div>
       {/* section 8 */}
       <div className="container my-5 dsafaq">
-        <h2>Home Loan DSA FAQs</h2>
+        <h2>Business Loan DSA FAQs</h2>
         <DSAFaq mainData={mainData} />
         <p>
           Join us today for a rewarding career in the financial services
