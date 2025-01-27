@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer class="footer">
-      <div class="d-flex justify-content-center py-2 border-bottom-1 top-bg">
+      <div class="d-flex flex-wrap justify-content-center py-2 border-bottom-1 top-bg">
         <a href="#" class="mx-3">
           DSA Partner
         </a>

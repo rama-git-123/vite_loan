@@ -36,13 +36,13 @@ const PesonalLoan = ({ mainData }) => {
         }`}
       >
         {LoansData?.navTabs?.map((item, index) => (
-          <Link
-            to={item?.link}
+          <a
             className={`nav-item nav-link ${index === 0 ? "active" : ""}`}
             key={index}
+            href={item?.link}
           >
             {item?.name}
-          </Link>
+          </a>
         ))}
       </nav>
 
@@ -62,7 +62,7 @@ const PesonalLoan = ({ mainData }) => {
         </div>
       </div>
 
-      <div class="container mt-5">
+      <div class="container mt-5" id="featuresAndBenefits">
         <h3 class="mb-3">{LoansData?.featuresAndBenefits?.title}</h3>
         <p>{LoansData?.featuresAndBenefits?.description}</p>
         <ul>

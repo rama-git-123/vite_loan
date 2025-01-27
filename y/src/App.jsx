@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import "./scss/dsa.scss";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import data from "../src/data/data.json";
 import Home from "./pages/Home";
@@ -24,6 +25,13 @@ import LoanAgainstProprties from "./pages/loans/loanAgainastProprties";
 import CarLoan from "./pages/loans/carLoan";
 import EducationLoan from "./pages/loans/educationLoan";
 import GoldLoan from "./pages/loans/goldLoan";
+import PersonalLoanDSA from "./pages/dsa/prsonalLoanDSA";
+import HomeLoanDSA from "./pages/dsa/homeLoanDSA";
+import BusinessLoanDSA from "./pages/dsa/businessLoanDSA";
+import LoanAgainstPropertiesDSA from "./pages/dsa/loanAgainstPropertiesDSA";
+import EducationLoanDSA from "./pages/dsa/educationLoanDSA";
+import AutoLoanDSA from "./pages/dsa/autoLoanDSA";
+import CreditCardDSA from "./pages/dsa/creditCardDSA";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -68,6 +76,34 @@ function App() {
           <Route
             path="loans/gold-loan"
             element={<GoldLoan mainData={data} />}
+          />
+          <Route
+            path="dsa/personal-loan-dsa"
+            element={<PersonalLoanDSA mainData={data} />}
+          />
+          <Route
+            path="dsa/home-loan-dsa"
+            element={<HomeLoanDSA mainData={data} />}
+          />
+          <Route
+            path="dsa/business-loan-dsa"
+            element={<BusinessLoanDSA mainData={data} />}
+          />
+          <Route
+            path="dsa/loan-against-property-dsa"
+            element={<LoanAgainstPropertiesDSA mainData={data} />}
+          />
+          <Route
+            path="dsa/education-loan-dsa"
+            element={<EducationLoanDSA mainData={data} />}
+          />
+          <Route
+            path="dsa/auto-loan-dsa"
+            element={<AutoLoanDSA mainData={data} />}
+          />
+          <Route
+            path="dsa/credit-card-dsa"
+            element={<CreditCardDSA mainData={data} />}
           />
           <Route
             path="insurance/All-Insurance"
