@@ -45,7 +45,8 @@
   }
   .document{
     ul{
-        
+        list-style: disc !important;
+        margin-left: 20px !important;
     }
     li{
         margin-bottom: 10px;
@@ -58,4 +59,17 @@
         margin-right: 20px;
     }
 
+  }
+  .pertners{
+    
+    li{
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: bold;
+       
+    }
+    i{
+        color: #ff3130;
+        margin-right: 20px;
+    }
   }

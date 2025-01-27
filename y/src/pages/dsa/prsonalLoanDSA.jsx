@@ -302,7 +302,7 @@ const PersonalLoanDSA = ({ mainData }) => {
         </ul>
       </div>
       {/* section 6 */}
-      <div className="container my-5 document">
+      <div className="container my-5 pertners">
         <h2>Why Partner With Ruloans? - Benefits And Perks</h2>
         <p>
           My scope Distribution Services Private Limited (RDSPL), is your
