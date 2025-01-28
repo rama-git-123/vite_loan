@@ -16,7 +16,7 @@ const CardLoanSection = ({ mainData }) => {
                     {item.title}
                     <i
                       className={`bi ${item.icon}`}
-                      style={{ marginLeft: "20px", color: "#ff403f" }}
+                      style={{ marginLeft: "9px", color: "#ff403f" }}
                     ></i>
                   </h5>
                   <p className="card-text">{item.description}</p>

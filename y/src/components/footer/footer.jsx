@@ -36,6 +36,10 @@ const Footer = () => {
           <div class="col-md-3">
             <img src={logo} width="200" />
             <p>
+              <span><i
+                      className={`bi-map`}
+                      style={{ paddingRight: "10px", color: "#fff" }}
+                    ></i></span>
               Address-307, 3rd Floor, Nexus Esplanade Mall, Rasulgarh,
               Bhubaneshwar-751010
             </p>
@@ -138,11 +142,10 @@ const Footer = () => {
       <div class="d-flex justify-content-between align-items-center py-3 border-top-1 bottom-bg">
         <p class="mb-0">© {currentYear} My scope. All Rights Reserved.</p>
         <p class="mb-0">
-          Contact : <a href="#">9861346171</a>
+        <i class="bi bi-phone"></i> Contact : <a href="#">9861346171</a>
         </p>
         <div class="social-icons">
           <a href="#" class="bi bi-whatsapp"></a>
-          <a href="#" class="bi bi-x"></a>
           <a href="#" class="bi bi-facebook"></a>
           <a href="#" class="bi bi-instagram"></a>
           <a href="#" class="bi bi-youtube"></a>

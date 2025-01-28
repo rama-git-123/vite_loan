@@ -1,5 +1,6 @@
 import "./innerPageBanner.scss";
 import bannerImage1 from "../../assets/images/banner-trade-en.webp";
+import homeloanImage1 from "../../assets/images/banner-trade-en.jpg";
 import bannerImage2 from "../../assets/images/r1.jpeg";
 const InnerPageBanner = ({ location }) => {
   const getBannerImage = () => {
@@ -11,7 +12,7 @@ const InnerPageBanner = ({ location }) => {
       case "/loans/personal-loan":
         return bannerImage2;
       case "/loans/home-loan":
-        return bannerImage1;
+        return homeloanImage1;
       case "/loans/business-loan":
         return bannerImage1;
       case "/loans/loan-against-property":

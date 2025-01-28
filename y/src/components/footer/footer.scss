@@ -8,12 +8,16 @@
       margin-top: 50px;
      
     }
+    .footer p{
+      color: #fff;
+      font-size: 19px;
+    }
     .footer a {
       color: #ccc;
       text-decoration: none;
     }
     .footer a:hover {
-      color: #fff;
+      color:#ff403f;
     }
     .social-icons a {
       font-size: 1.5rem;
@@ -27,10 +31,15 @@
     }
     .fw-bold{
       margin-bottom: 20px;
+      font-size: 26px;
     }
     .list-unstyled{
       li{
          padding-bottom: 10px;
+      }
+      a{
+        font-size: 19px;
+
       }
     }
     .top-bg{
@@ -38,6 +47,7 @@
       a{
          padding: 10px 0;
          color: #f4f4f5;
+         
       }
     }
     .bottom-bg{
