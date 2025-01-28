@@ -177,7 +177,7 @@ const AboutUs = ({ mainData }) => {
                   lenders.”
                 </p>
                 <p class="fw-bold text-danger mb-0">Kaushik Mehta</p>
-                <p class="text-muted">Founder of Ruloans</p>
+                <p class="text-muted">Founder of My Scope</p>
               </div>
             </div>
           </div>
@@ -189,7 +189,7 @@ const AboutUs = ({ mainData }) => {
                 <div class="icon-circle bg-light text-primary mb-3 mx-auto">
                   <i class="bi bi-trophy-fill fs-1"></i>
                 </div>
-                <h3 class="card-title2">1+</h3>
+                <h3 class="card-title2">5+</h3>
                 <p class="card-text2 text-muted">
                   Years of financial expertise
                 </p>

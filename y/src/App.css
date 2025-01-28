@@ -748,3 +748,14 @@
   line-height: 32px!important;
   font-family:poppins;
 }
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: #ff3131!important;
+  font-weight: 500;
+  font-size: 19px!important;
+  background: rgba(231, 63, 78, .11) !important;
+}
+.nav-tabs .nav-link{
+  color: #000!important;
+  font-size: 19px!important;
+  font-weight: 500!important;
+}

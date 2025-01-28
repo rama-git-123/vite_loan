@@ -14,8 +14,8 @@
     .card {
       border-radius: 10px;
       transition: transform 0.3s ease-in-out;
-      min-height: 225px;
-      max-height: 225px;
+      min-height: 280px;
+      max-height: 280px;
     }
     
     .card:hover {
@@ -147,5 +147,8 @@
     width: 2px;
     height: 100%;
     background-color: #dee2e6;
+  }
+  .about-us .card p{
+    font-size: 17px;
   }
   
