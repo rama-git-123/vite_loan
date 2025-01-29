@@ -1,13 +1,41 @@
 import { Link, useLocation } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Breadcrumb from "../../components/breadcrumb/breadcrumb";
 import LoansData from "../../data/loan.json";
 import EMICalculator from "../../components/emicalculator/emicalculator";
 import Faq from "../../components/faq/faq";
 import LoanReview from "../../components/loanReview/loanReview";
 const PesonalLoan = ({ mainData }) => {
+  // Create refs for each section
+  const sectionRefs = {
+    OVERVIEW: useRef(null),
+    FEATURES: useRef(null),
+    ELIGIBILITY: useRef(null),
+    DOCUMENTS: useRef(null),
+    "EMI CALCULATOR": useRef(null),
+    "FEES AND CHARGES": useRef(null),
+    REVIEWS: useRef(null),
+    "FAQ's": useRef(null),
+  };
+  const [activeIndex, setActiveIndex] = useState(0);
   const [isSticky, setIsSticky] = useState(false);
   const location = useLocation();
+  const handleScroll2 = (section, index) => {
+    setActiveIndex(index); // Update active tab
+
+    const element = sectionRefs[section]?.current;
+    if (element) {
+      const offset = 80; // Adjust this value to control spacing
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,16 +66,20 @@ const PesonalLoan = ({ mainData }) => {
         >
           {LoansData?.navTabs?.map((item, index) => (
             <a
-              className={`nav-item nav-link ${index === 0 ? "active" : ""}`}
               key={index}
-              href={item?.link}
+              className={`nav-item nav-link ${
+                index === activeIndex ? "active" : ""
+              }`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleScroll2(item.name, index);
+              }}
             >
               {item?.name}
             </a>
           ))}
         </nav>
-
-        <div class="container mt-5">
+        <div ref={sectionRefs["OVERVIEW"]} class="container mt-10">
           <h2 class="text-center mb-4">
             {LoansData?.personalLoanFeatures?.title}
           </h2>
@@ -63,7 +95,7 @@ const PesonalLoan = ({ mainData }) => {
           </div>
         </div>
 
-        <div class="container mt-5" id="featuresAndBenefits">
+        <div ref={sectionRefs["FEATURES"]} class="container mt-5">
           <h3 class="mb-3">{LoansData?.featuresAndBenefits?.title}</h3>
           <p>{LoansData?.featuresAndBenefits?.description}</p>
           <ul>
@@ -75,7 +107,7 @@ const PesonalLoan = ({ mainData }) => {
             ))}
           </ul>
         </div>
-        <div class="container mt-5">
+        <div ref={sectionRefs["ELIGIBILITY"]} class="container mt-5">
           <div class="p-4 bg-light border rounded-3 d-flex justify-content-between align-items-center">
             <div>
               <h4>Personal Loan Eligibility and Documents</h4>
@@ -110,7 +142,7 @@ const PesonalLoan = ({ mainData }) => {
           </ul>
         </div>
 
-        <div class="container mt-5">
+        <div ref={sectionRefs["DOCUMENTS"]} class="container mt-5">
           <h3>Documents required to apply for Personal Loan</h3>
           <ul>
             <li>
@@ -151,8 +183,11 @@ const PesonalLoan = ({ mainData }) => {
             </li>
           </ul>
         </div>
-        <EMICalculator />
-        <div class="container">
+        <div ref={sectionRefs["EMI CALCULATOR"]}>
+          <EMICalculator />
+        </div>
+
+        <div ref={sectionRefs["FEES AND CHARGES"]} class="container">
           <h2 class="text-center mb-4 margin-t-2">
             Fees and Charges for Personal Loan
           </h2>
@@ -202,8 +237,11 @@ const PesonalLoan = ({ mainData }) => {
           </p>
         </div>
         {/* section */}
-        <LoanReview title={"personal loan Review"} />
-        <div className="container">
+        <div ref={sectionRefs["REVIEWS"]}>
+          <LoanReview title={"personal loan Review"} />
+        </div>
+
+        <div ref={sectionRefs["FAQ's"]} className="container">
           <Faq mainData={mainData} />
         </div>
       </div>

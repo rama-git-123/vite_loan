@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Breadcrumb from "../components/breadcrumb/breadcrumb";
 import LoanReview from "../components/loanReview/loanReview";
 import LoansData from "../data/loan.json";
@@ -7,6 +7,34 @@ import Faq from "../components/faq/faq";
 const CreditCard = ({ mainData }) => {
   const [isSticky, setIsSticky] = useState(false);
   const location = useLocation();
+  const [activeIndex, setActiveIndex] = useState(0);
+  const sectionRefs = {
+    OVERVIEW: useRef(null),
+    FEATURES: useRef(null),
+    ELIGIBILITY: useRef(null),
+    DOCUMENTS: useRef(null),
+    "EMI CALCULATOR": useRef(null),
+    "FEES AND CHARGES": useRef(null),
+    REVIEWS: useRef(null),
+    "FAQ's": useRef(null),
+  };
+
+  const handleScroll2 = (section, index) => {
+    setActiveIndex(index); // Update active tab
+
+    const element = sectionRefs[section]?.current;
+    if (element) {
+      const offset = 80; // Adjust this value to control spacing
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   useEffect(() => {
     const handleScroll = () => {
       // Add sticky class when scrolled past a certain point
@@ -31,13 +59,18 @@ const CreditCard = ({ mainData }) => {
           }`}
         >
           {LoansData?.creditNavTabs?.map((item, index) => (
-            <Link
-              to={item?.link}
-              className={`nav-item nav-link ${index === 0 ? "active" : ""}`}
+            <a
               key={index}
+              className={`nav-item nav-link ${
+                index === activeIndex ? "active" : ""
+              }`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleScroll2(item.name, index);
+              }}
             >
               {item?.name}
-            </Link>
+            </a>
           ))}
         </nav>
         {/* <nav class="nav nav-tabs justify-content-center border-bottom-0 loan-nav">
@@ -55,7 +88,7 @@ const CreditCard = ({ mainData }) => {
         ))}
       </nav> */}
 
-        <div class="container my-5">
+        <div ref={sectionRefs["OVERVIEW"]} class="container my-5">
           <div class="credit-card-section">
             <h2>What is a Credit Card?</h2>
             <p>
@@ -190,7 +223,7 @@ const CreditCard = ({ mainData }) => {
           </div>
 
           {/* section  */}
-          <div class="container">
+          <div ref={sectionRefs["FEATURES"]} class="container">
             <div class="credit-card-section">
               <h2>Features & Benefits of Credit Cards</h2>
               <p>
@@ -233,7 +266,10 @@ const CreditCard = ({ mainData }) => {
                 </ul>
               </div>
 
-              <div class="credit-card-eligibility">
+              <div
+                ref={sectionRefs["ELIGIBILITY"]}
+                class="credit-card-eligibility"
+              >
                 <div className="row">
                   <div class="col-md-9 mb-4">
                     <h2>Credit Card Eligibility and Documents</h2>
@@ -296,7 +332,9 @@ const CreditCard = ({ mainData }) => {
                 you're interested in before applying.
               </p>
 
-              <h2>Documents Required to Apply for a Credit Card</h2>
+              <h2 ref={sectionRefs["DOCUMENTS"]}>
+                Documents Required to Apply for a Credit Card
+              </h2>
               <p>
                 The documents needed to apply for a credit card can differ based
                 on the issuing institution. However, the following are generally
@@ -328,8 +366,13 @@ const CreditCard = ({ mainData }) => {
               </ol>
             </div>
           </div>
-          <LoanReview />
-          <Faq mainData={mainData} />
+          <div ref={sectionRefs["REVIEWS"]}>
+            <LoanReview title={"Credit card"} />
+          </div>
+
+          <div ref={sectionRefs["FAQ's"]}>
+            <Faq mainData={mainData} />
+          </div>
         </div>
       </div>
     </>

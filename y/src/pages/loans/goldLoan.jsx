@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Breadcrumb from "../../components/breadcrumb/breadcrumb";
 import LoansData from "../../data/loan.json";
 import EMICalculator from "../../components/emicalculator/emicalculator";
@@ -8,7 +8,34 @@ import LoanReview from "../../components/loanReview/loanReview";
 const GoldLoan = ({ mainData }) => {
   const [isSticky, setIsSticky] = useState(false);
   const location = useLocation();
+  const [activeIndex, setActiveIndex] = useState(0);
+  const sectionRefs = {
+    OVERVIEW: useRef(null),
+    FEATURES: useRef(null),
+    ELIGIBILITY: useRef(null),
+    DOCUMENTS: useRef(null),
+    "EMI CALCULATOR": useRef(null),
+    "FEES AND CHARGES": useRef(null),
+    REVIEWS: useRef(null),
+    "FAQ's": useRef(null),
+  };
 
+  const handleScroll2 = (section, index) => {
+    setActiveIndex(index); // Update active tab
+
+    const element = sectionRefs[section]?.current;
+    if (element) {
+      const offset = 80; // Adjust this value to control spacing
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   useEffect(() => {
     const handleScroll = () => {
       // Add sticky class when scrolled past a certain point
@@ -38,17 +65,22 @@ const GoldLoan = ({ mainData }) => {
           }`}
         >
           {LoansData?.navTabs?.map((item, index) => (
-            <Link
-              to={item?.link}
-              className={`nav-item nav-link ${index === 0 ? "active" : ""}`}
+            <a
               key={index}
+              className={`nav-item nav-link ${
+                index === activeIndex ? "active" : ""
+              }`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleScroll2(item.name, index);
+              }}
             >
               {item?.name}
-            </Link>
+            </a>
           ))}
         </nav>
 
-        <div class="container mt-5">
+        <div ref={sectionRefs["OVERVIEW"]} class="container mt-5">
           <h2 class="text-center mb-4">{LoansData?.goldLoanFeatures?.title}</h2>
           <div class="row text-center g-3">
             {LoansData?.goldLoanFeatures?.features.map((item, index) => (
@@ -62,7 +94,7 @@ const GoldLoan = ({ mainData }) => {
           </div>
         </div>
 
-        <div class="container mt-5">
+        <div ref={sectionRefs["FEATURES"]} class="container mt-5">
           <h3 class="mb-3">{LoansData?.goldLoanFeaturesAndBenefits?.title}</h3>
           <p>{LoansData?.goldLoanFeaturesAndBenefits?.description}</p>
           <ul>
@@ -76,7 +108,7 @@ const GoldLoan = ({ mainData }) => {
             )}
           </ul>
         </div>
-        <div class="container mt-5">
+        <div ref={sectionRefs["ELIGIBILITY"]} class="container mt-5">
           <div class="p-4 bg-light border rounded-3 d-flex justify-content-between align-items-center">
             <div>
               <h4>Gold Loan Eligibility and Documents</h4>
@@ -108,7 +140,7 @@ const GoldLoan = ({ mainData }) => {
               identity verification.
             </li>
           </ul>
-          <h2 className="margin-t-2 margin-b-2">
+          <h2 ref={sectionRefs["DOCUMENTS"]} className="margin-t-2 margin-b-2">
             Documents Required to Apply for Gold Loan
           </h2>
           <ul>
@@ -168,7 +200,7 @@ const GoldLoan = ({ mainData }) => {
             </li>
           </ul>
         </div>
-        <div>
+        <div ref={sectionRefs["EMI CALCULATOR"]}>
           <h2 className="margin-t-2 margin-b-2">Gold Loan EMI Calculator</h2>
 
           <h6 className="margin-t-2 margin-b-2">
@@ -193,7 +225,7 @@ const GoldLoan = ({ mainData }) => {
           </ul>
         </div>
 
-        <div class="container">
+        <div ref={sectionRefs["FEES AND CHARGES"]} class="container">
           <h2 class="text-center mb-4 margin-t-2">
             Fees and Charges for Gold Loan
           </h2>
@@ -239,8 +271,10 @@ const GoldLoan = ({ mainData }) => {
           </p>
         </div>
         {/* section */}
-        <LoanReview title={"Gold Loan Reviews"} />
-        <div className="container">
+        <div ref={sectionRefs["REVIEWS"]}>
+          <LoanReview title={"Gold Loan Reviews"} />
+        </div>
+        <div ref={sectionRefs["FAQ's"]} className="container">
           <Faq mainData={mainData} />
         </div>
       </div>

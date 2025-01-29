@@ -9,7 +9,9 @@ const Breadcrumb = ({ location, page, subPage }) => {
   return (
     <>
       <div className="banner-container">
-        {location.pathname == "/contact-us" ? (
+        {location.pathname == "/contact-us" ||
+        location.pathname == "/loans/features" ||
+        location.pathname == "/loans/eligibility" ? (
           <></>
         ) : (
           <InnerPageBanner location={location} />

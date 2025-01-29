@@ -1,8 +1,8 @@
 {
     "navTabs": [
-      { "name": "OVERVIEW", "link": "#" },
-      { "name": "FEATURES", "link": "#featuresAndBenefits" },
-      { "name": "ELIGIBILITY", "link": "#" },
+      { "name": "OVERVIEW", "link": "personal-loan" },
+      { "name": "FEATURES", "link": "features" },
+      { "name": "ELIGIBILITY", "link": "eligibility" },
       { "name": "DOCUMENTS", "link": "#" },
       { "name": "EMI CALCULATOR", "link": "#" },
       { "name": "FEES AND CHARGES", "link": "#" },

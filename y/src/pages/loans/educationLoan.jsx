@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Breadcrumb from "../../components/breadcrumb/breadcrumb";
 import LoansData from "../../data/loan.json";
 import EMICalculator from "../../components/emicalculator/emicalculator";
@@ -8,7 +8,34 @@ import LoanReview from "../../components/loanReview/loanReview";
 const EducationLoan = ({ mainData }) => {
   const [isSticky, setIsSticky] = useState(false);
   const location = useLocation();
+  const [activeIndex, setActiveIndex] = useState(0);
+  const sectionRefs = {
+    OVERVIEW: useRef(null),
+    FEATURES: useRef(null),
+    ELIGIBILITY: useRef(null),
+    DOCUMENTS: useRef(null),
+    "EMI CALCULATOR": useRef(null),
+    "FEES AND CHARGES": useRef(null),
+    REVIEWS: useRef(null),
+    "FAQ's": useRef(null),
+  };
 
+  const handleScroll2 = (section, index) => {
+    setActiveIndex(index); // Update active tab
+
+    const element = sectionRefs[section]?.current;
+    if (element) {
+      const offset = 80; // Adjust this value to control spacing
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   useEffect(() => {
     const handleScroll = () => {
       // Add sticky class when scrolled past a certain point
@@ -37,17 +64,22 @@ const EducationLoan = ({ mainData }) => {
           }`}
         >
           {LoansData?.navTabs?.map((item, index) => (
-            <Link
-              to={item?.link}
-              className={`nav-item nav-link ${index === 0 ? "active" : ""}`}
+            <a
               key={index}
+              className={`nav-item nav-link ${
+                index === activeIndex ? "active" : ""
+              }`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleScroll2(item.name, index);
+              }}
             >
               {item?.name}
-            </Link>
+            </a>
           ))}
         </nav>
 
-        <div class="container mt-5">
+        <div ref={sectionRefs["OVERVIEW"]} class="container mt-5">
           <h2 class="text-center mb-4">
             {LoansData?.educationLoanFeatures?.title}
           </h2>
@@ -106,7 +138,7 @@ const EducationLoan = ({ mainData }) => {
           </div>
         </div>
 
-        <div class="container mt-5">
+        <div ref={sectionRefs["FEATURES"]} class="container mt-5">
           <h3 class="mb-3">
             {LoansData?.educationLoanFeaturesAndBenefits?.title}
           </h3>
@@ -122,7 +154,7 @@ const EducationLoan = ({ mainData }) => {
             )}
           </ul>
         </div>
-        <div class="container mt-5">
+        <div ref={sectionRefs["ELIGIBILITY"]} class="container mt-5">
           <div class="p-4 bg-light border rounded-3 d-flex justify-content-between align-items-center">
             <div>
               <h4>Education Loan Eligibility and Documents</h4>
@@ -201,7 +233,7 @@ const EducationLoan = ({ mainData }) => {
               of identity, proof of admission, income documents, and more.
             </li>
           </ul>
-          <h2 className="margin-t-2 margin-b-2">
+          <h2 ref={sectionRefs["DOCUMENTS"]} className="margin-t-2 margin-b-2">
             Documents Required to Apply for Education Loan
           </h2>
           <p>
@@ -220,7 +252,12 @@ const EducationLoan = ({ mainData }) => {
             Explore in detail by Visiting the Documents Required Page
           </h6>
         </div>
-        <h2 className="margin-t-2 margin-b-2">Education Loan EMI Calculator</h2>
+        <h2
+          ref={sectionRefs["EMI CALCULATOR"]}
+          className="margin-t-2 margin-b-2"
+        >
+          Education Loan EMI Calculator
+        </h2>
         <p>
           Using an Education Loan EMI (Equated Monthly Installment) calculator
           can help you estimate your monthly loan repayment amount.
@@ -296,7 +333,7 @@ const EducationLoan = ({ mainData }) => {
           </li>
         </ul>
 
-        <div class="container">
+        <div ref={sectionRefs["FEES AND CHARGES"]} class="container">
           <h2 class="text-center mb-4 margin-t-2">
             Fees and Charges for Education Loan
           </h2>
@@ -346,10 +383,12 @@ const EducationLoan = ({ mainData }) => {
           </p>
         </div>
         {/* section */}
-        <LoanReview title={"Education Loan Reviews"} />
+        <div ref={sectionRefs["REVIEWS"]}>
+          <LoanReview title={"Education Loan Reviews"} />
+        </div>
         <h2 class=" mb-4 margin-t-2">Learn more about Education Loans</h2>
         <Faq mainData={mainData} />
-        <div className="container">
+        <div ref={sectionRefs["FAQ's"]} className="container">
           <Faq mainData={mainData} />
         </div>
       </div>

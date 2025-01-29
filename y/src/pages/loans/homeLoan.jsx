@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Breadcrumb from "../../components/breadcrumb/breadcrumb";
 import LoansData from "../../data/loan.json";
 import EMICalculator from "../../components/emicalculator/emicalculator";
@@ -8,7 +8,33 @@ import LoanReview from "../../components/loanReview/loanReview";
 const HomeLoan = ({ mainData }) => {
   const [isSticky, setIsSticky] = useState(false);
   const location = useLocation();
+  const [activeIndex, setActiveIndex] = useState(0);
+  const sectionRefs = {
+    OVERVIEW: useRef(null),
+    FEATURES: useRef(null),
+    ELIGIBILITY: useRef(null),
+    DOCUMENTS: useRef(null),
+    "EMI CALCULATOR": useRef(null),
+    "FEES AND CHARGES": useRef(null),
+    REVIEWS: useRef(null),
+    "FAQ's": useRef(null),
+  };
+  const handleScroll2 = (section, index) => {
+    setActiveIndex(index); // Update active tab
 
+    const element = sectionRefs[section]?.current;
+    if (element) {
+      const offset = 80; // Adjust this value to control spacing
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   useEffect(() => {
     const handleScroll = () => {
       // Add sticky class when scrolled past a certain point
@@ -23,6 +49,7 @@ const HomeLoan = ({ mainData }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <>
       {" "}
@@ -38,17 +65,22 @@ const HomeLoan = ({ mainData }) => {
           }`}
         >
           {LoansData?.navTabs?.map((item, index) => (
-            <Link
-              to={item?.link}
-              className={`nav-item nav-link ${index === 0 ? "active" : ""}`}
+            <a
               key={index}
+              className={`nav-item nav-link ${
+                index === activeIndex ? "active" : ""
+              }`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleScroll2(item.name, index);
+              }}
             >
               {item?.name}
-            </Link>
+            </a>
           ))}
         </nav>
 
-        <div class="container mt-5">
+        <div ref={sectionRefs["OVERVIEW"]} class="container mt-5">
           <h2 class="text-center mb-4">{LoansData?.homeLoanFeatures?.title}</h2>
           <div class="row text-center g-3">
             {LoansData?.homeLoanFeatures?.features.map((item, index) => (
@@ -62,7 +94,7 @@ const HomeLoan = ({ mainData }) => {
           </div>
         </div>
 
-        <div class="container mt-5">
+        <div ref={sectionRefs["FEATURES"]} class="container mt-5">
           <h3 class="mb-3">{LoansData?.homeLoanFeaturesAndBenefits?.title}</h3>
           <p>{LoansData?.homeLoanFeaturesAndBenefits?.description}</p>
           <ul>
@@ -76,7 +108,7 @@ const HomeLoan = ({ mainData }) => {
             )}
           </ul>
         </div>
-        <div class="container mt-5">
+        <div ref={sectionRefs["ELIGIBILITY"]} class="container mt-5">
           <div class="p-4 bg-light border rounded-3 d-flex justify-content-between align-items-center">
             <div>
               <h4>Home Loan Eligibility and Documents</h4>
@@ -125,7 +157,7 @@ const HomeLoan = ({ mainData }) => {
           </ul>
         </div>
 
-        <div class="container mt-5">
+        <div ref={sectionRefs["DOCUMENTS"]} class="container mt-5">
           <h3>Documentation for Home Loan</h3>
           <h4 className="margin-t-2 margin-b-2">1. Salaried Individuals</h4>
           <ul>
@@ -181,7 +213,7 @@ const HomeLoan = ({ mainData }) => {
             <li>Occupancy Certificate</li>
           </ul>
         </div>
-        <div>
+        <div ref={sectionRefs["EMI CALCULATOR"]}>
           <h4 className="margin-t-2 margin-b-2">
             EMI Calculator for Home Loan
           </h4>
@@ -199,7 +231,7 @@ const HomeLoan = ({ mainData }) => {
           <EMICalculator />
         </div>
 
-        <div class="container">
+        <div ref={sectionRefs["FEES AND CHARGES"]} class="container">
           <h2 class="text-center mb-4 margin-t-2">
             Fees and Charges for Home Loan
           </h2>
@@ -249,8 +281,11 @@ const HomeLoan = ({ mainData }) => {
           </p>
         </div>
         {/* section */}
-        <LoanReview title="Home loan Review" />
-        <div className="container">
+        <div ref={sectionRefs["REVIEWS"]}>
+          <LoanReview title="Home loan Review" />
+        </div>
+
+        <div ref={sectionRefs["FAQ's"]} className="container">
           <Faq mainData={mainData} />
         </div>
       </div>

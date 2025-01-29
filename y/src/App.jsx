@@ -32,6 +32,8 @@ import LoanAgainstPropertiesDSA from "./pages/dsa/loanAgainstPropertiesDSA";
 import EducationLoanDSA from "./pages/dsa/educationLoanDSA";
 import AutoLoanDSA from "./pages/dsa/autoLoanDSA";
 import CreditCardDSA from "./pages/dsa/creditCardDSA";
+import Features from "./pages/loans/features";
+import Eligibility from "./pages/loans/eligibility";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -76,6 +78,11 @@ function App() {
           <Route
             path="loans/gold-loan"
             element={<GoldLoan mainData={data} />}
+          />
+          <Route path="loans/features" element={<Features mainData={data} />} />
+          <Route
+            path="loans/eligibility"
+            element={<Eligibility mainData={data} />}
           />
           <Route
             path="dsa/personal-loan-dsa"
