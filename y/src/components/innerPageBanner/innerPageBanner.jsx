@@ -1,7 +1,12 @@
 import "./innerPageBanner.scss";
 import bannerImage1 from "../../assets/images/banner-trade-en.webp";
-import homeloanImage1 from "../../assets/images/banner-trade-en.jpg";
-import bannerImage2 from "../../assets/images/r1.jpeg";
+import personalloanImage1 from "../../assets/images/banner-trade-en.jpg";
+import homeloanImage from "../../assets/images/home-loan.jpg";
+import businessloanImage from "../../assets/images/business-loan.jpg";
+import propertyloanImage from "../../assets/images/property-loan.jpg";
+import carloanImage from "../../assets/images/car-loan.jpg";
+import educationloanImage from "../../assets/images/education-loan.jpg";
+import goldloanImage from "../../assets/images/gold-loan.jpg";
 const InnerPageBanner = ({ location }) => {
   const getBannerImage = () => {
     switch (location.pathname) {
@@ -10,19 +15,19 @@ const InnerPageBanner = ({ location }) => {
       case "/credit-cards":
         return bannerImage2;
       case "/loans/personal-loan":
-        return bannerImage2;
+        return personalloanImage1;
       case "/loans/home-loan":
-        return homeloanImage1;
+        return homeloanImage;
       case "/loans/business-loan":
-        return bannerImage1;
+        return businessloanImage;
       case "/loans/loan-against-property":
-        return bannerImage1;
+        return propertyloanImage;
       case "/loans/car-loan":
-        return bannerImage1;
+        return carloanImage;
       case "/loans/education-loan":
-        return bannerImage1;
+        return educationloanImage;
       case "/loans/gold-loan":
-        return bannerImage1;
+        return goldloanImage;
       case "/insurance/All-Insurance":
         return bannerImage1;
       case "/insurance/life-insurance":
