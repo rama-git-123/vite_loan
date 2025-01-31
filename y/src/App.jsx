@@ -34,6 +34,7 @@ import AutoLoanDSA from "./pages/dsa/autoLoanDSA";
 import CreditCardDSA from "./pages/dsa/creditCardDSA";
 import Features from "./pages/loans/features";
 import Eligibility from "./pages/loans/eligibility";
+import EmiCalculatorPage from "./pages/emicalculator";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -54,6 +55,7 @@ function App() {
             element={<BeacamePartner mainData={data} />}
           />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/emicalculator" element={<EmiCalculatorPage />} />
           <Route
             path="loans/personal-loan"
             element={<PesonalLoan mainData={data} />}
