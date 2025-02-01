@@ -13,7 +13,7 @@ const InnerPageBanner = ({ location }) => {
       case "/about-us":
         return bannerImage1;
       case "/credit-cards":
-        return bannerImage2;
+        return bannerImage1;
       case "/loans/personal-loan":
         return personalloanImage1;
       case "/loans/home-loan":

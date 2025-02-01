@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  overflow: hidden;
 }
 
 .logo {
@@ -719,7 +720,7 @@
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    font-size: 20px !important;
+    font-size: 19px !important;
     color: #000000 !important;
     text-transform: uppercase;
     padding: 0px 18px !important;
@@ -753,9 +754,13 @@
   font-weight: 500;
   font-size: 19px!important;
   background: rgba(231, 63, 78, .11) !important;
+  cursor: poinster!important;
 }
 .nav-tabs .nav-link{
   color: #000!important;
   font-size: 19px!important;
   font-weight: 500!important;
+}
+.banner-container{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
