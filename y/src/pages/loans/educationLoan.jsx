@@ -387,7 +387,7 @@ const EducationLoan = ({ mainData }) => {
           <LoanReview title={"Education Loan Reviews"} />
         </div>
         <h2 class=" mb-4 margin-t-2">Learn more about Education Loans</h2>
-        <Faq mainData={mainData} />
+        {/* <Faq mainData={mainData} /> */}
         <div ref={sectionRefs["FAQ's"]} className="container">
           <Faq mainData={mainData} />
         </div>
