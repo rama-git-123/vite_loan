@@ -88,7 +88,7 @@ const CreditCardDSA = ({ mainData }) => {
           <p>
             My Scope Distribution Services Private Limited (RDSPL), a registered
             DSA, has partnerships with more than 265 leading Banks and NBFCs to
-            offer loans in more than 2000 cities in India. Ruloans retail
+            offer loans in more than 2000 cities in India. My Scopes retail
             portfolio includes Personal Loans, Business Loans, Home Loans, Loan
             against Property or Mortgage Loans, New Car Loan , Used Car Loan &
             Car Refinance, Credit Cards, and more. Eligibility criteria to
@@ -118,7 +118,7 @@ const CreditCardDSA = ({ mainData }) => {
       <div className="container my-5">
         <h2>Process Of Credit Card DSA Registration</h2>
         <p>
-          Registering to partner with Ruloans makes for a good start to a
+          Registering to partner with My Scopes makes for a good start to a
           successful DSA career. This guide will walk you through each Online
           Loan DSA Registration step as you begin and grow your business.
         </p>
@@ -137,19 +137,19 @@ const CreditCardDSA = ({ mainData }) => {
         </p>
         <h5>Meet</h5>
         <p>
-          At the meeting, a Ruloans Manager will explain all you need to know,
+          At the meeting, a My Scopes Manager will explain all you need to know,
           including the process to follow while generating leads for the
           Personal Loan DSA.
         </p>
         <h5>Sign DSA Agreement</h5>
         <p>
-          After signing the DSA agreement, you will become a Ruloans Partner and
-          can start earning instantly.
+          After signing the DSA agreement, you will become a My Scopes Partner
+          and can start earning instantly.
         </p>
         <p>
           Once you're comfortable with the processes and procedures, an
           agreement will be inked between you and My scope. Once signed and
-          stamped, you will be an official Ruloans Loan DSA Partner running a
+          stamped, you will be an official My Scopes Loan DSA Partner running a
           Loan DSA Franchise.
         </p>
         <button class="btn submit-btn">Apply Now</button>
@@ -169,9 +169,9 @@ const CreditCardDSA = ({ mainData }) => {
           in the finance world.
         </p>
         <p>
-          If you're looking for a Personal Loan DSA Near You, partnering with
-          Ruloans as a Loan DSA Partner could be your ideal choice. Here's why
-          you should consider Online Loan DSA Registration with Ruloans: We
+          If you're looking for a Personal Loan DSA Near You, partnering with My
+          Scopes as a Loan DSA Partner could be your ideal choice. Here's why
+          you should consider Online Loan DSA Registration with My Scopes: We
           collaborate with industry leaders to drive and fulfill upwardly mobile
           financial aspirations!
         </p>
@@ -253,7 +253,7 @@ const CreditCardDSA = ({ mainData }) => {
         </div>
 
         <p>
-          Trained to be a professional Ruloans Agent by first-class focused
+          Trained to be a professional My Scopes Agent by first-class focused
           coaches and specialists supported by effective and superior digital
           backend technology and experts, you benefit from our DSA program
           through Online Loan DSA Registration as follows:

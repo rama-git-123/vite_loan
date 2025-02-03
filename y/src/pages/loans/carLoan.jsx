@@ -199,10 +199,10 @@ const CarLoan = ({ mainData }) => {
           <p>
             An EMI calculator is a useful tool that can help you estimate the
             monthly installments you will have to pay towards your used Car Loan
-            within a specific period. By using the RuLoans EMI calculator, you
+            within a specific period. By using the My Scopes EMI calculator, you
             can calculate your EMI beforehand, which can help you plan your
             finances better. Additionally, you can check your eligibility and
-            compare different Loan options using RuLoans used Car Loan
+            compare different Loan options using My Scopes used Car Loan
             calculator.
           </p>
           <p>

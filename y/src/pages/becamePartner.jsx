@@ -12,7 +12,7 @@ const BeacamePartner = ({ mainData }) => {
           <div class="col-md-7">
             <h1 class="fw-bold">We are India’s Leading Loan Distributor</h1>
             <p class="mb-4">
-              Earning Opportunity for all existing agents with Ruloans Loan
+              Earning Opportunity for all existing agents with My Scopes Loan
               Partner Program
             </p>
             <form class="row g-3">
@@ -101,7 +101,7 @@ const BeacamePartner = ({ mainData }) => {
         <div class="text-center mb-5">
           <h1 class="fw-bold">Online DSA Registration</h1>
           <p class="lead">
-            Online DSA registration with Ruloans is your gateway to becoming a
+            Online DSA registration with My Scopes is your gateway to becoming a
             successful Direct Sales Agent. Partner with India’s leading loan
             distributor, offering a wide range of financial products like home
             loans, business loans, personal loans, loans against property, car
@@ -184,11 +184,11 @@ const BeacamePartner = ({ mainData }) => {
       {/* section 3 */}
       <div class="container">
         <div class="partner-section">
-          <h2>Who can Become a Partner with Ruloans?</h2>
+          <h2>Who can Become a Partner with My Scopes?</h2>
           <p>
             Enhance your professional status. Fire up your entrepreneurial
             instincts and drive into victory! Any person with interpersonal
-            skills and a passion for success can be a part of Team Ruloans.
+            skills and a passion for success can be a part of Team My Scopes.
           </p>
 
           <div class="partner-options">
@@ -224,7 +224,7 @@ const BeacamePartner = ({ mainData }) => {
           <p>
             You're a Loan Agent who is knowledgeable about all types of loans
             offered by the financial institutions you represent and can advise
-            people on the best options. Get your Ruloans Loan Agent Partner
+            people on the best options. Get your My Scopes Loan Agent Partner
             Advantage now and advise people on how to finance their dreams!
           </p>
         </div>
@@ -289,7 +289,7 @@ const BeacamePartner = ({ mainData }) => {
 
         <div class="section-container">
           <h2 className="margin-b-2">
-            What Are The Eligibility Criteria For The Ruloans DSA Registration
+            What Are The Eligibility Criteria For The My Scopes DSA Registration
             Process?
           </h2>
 
@@ -310,8 +310,8 @@ const BeacamePartner = ({ mainData }) => {
               <div class="eligibility-card">
                 <h5>Educational Qualifications</h5>
                 <p>
-                  There are no educational requirements to qualify as a Ruloans
-                  Loan DSA Partner
+                  There are no educational requirements to qualify as a My
+                  Scopes Loan DSA Partner
                 </p>
               </div>
             </div>
@@ -320,7 +320,7 @@ const BeacamePartner = ({ mainData }) => {
                 <h5>Professional Qualifications</h5>
                 <p>
                   Whether you are a working professional or a business owner,
-                  you are welcome to register as a Ruloans Loan DSA Franchise
+                  you are welcome to register as a My Scopes Loan DSA Franchise
                 </p>
               </div>
             </div>
@@ -328,23 +328,23 @@ const BeacamePartner = ({ mainData }) => {
         </div>
 
         <div class="section-container">
-          <h2 className="margin-b-2">Process Of Ruloans DSA Registration</h2>
+          <h2 className="margin-b-2">Process Of My Scopes DSA Registration</h2>
           <div class="process-card">
             <p>
-              Registering to partner with Ruloans makes for a good start to a
+              Registering to partner with My Scopes makes for a good start to a
               successful DSA career. This guide will walk you each step through
               the Online Loan DSA Registration as you begin and grow your
               business.
             </p>
-            {/* Add more content for the "Process Of Ruloans DSA Registration" section here */}
+            {/* Add more content for the "Process Of My Scopes DSA Registration" section here */}
           </div>
         </div>
       </div>
       {/* section -4 */}
       <div class="container py-5">
-        <h2 class="text-center mb-4">Process Of Ruloans DSA Registration</h2>
+        <h2 class="text-center mb-4">Process Of My Scopes DSA Registration</h2>
         <p class="text-center margin-b-2">
-          Registering to partner with Ruloans makes for a good start to a
+          Registering to partner with My Scopes makes for a good start to a
           successful DSA career. This guide will walk you each step through the
           Online Loan DSA Registration as you begin and grow your business.
         </p>
@@ -370,8 +370,8 @@ const BeacamePartner = ({ mainData }) => {
               <div class="step-number">2</div>
               <h5 class="fw-bold">Expect a Call</h5>
               <p>
-                The Ruloans support team will call you to guide, and coordinate
-                a meeting with you.
+                The My Scopes support team will call you to guide, and
+                coordinate a meeting with you.
               </p>
             </div>
           </div>
@@ -385,7 +385,7 @@ const BeacamePartner = ({ mainData }) => {
               <div class="step-number">3</div>
               <h5 class="fw-bold">Meet</h5>
               <p>
-                At the meeting, a Ruloans Manager will explain to you all you
+                At the meeting, a My Scopes Manager will explain to you all you
                 need to know including the process to follow while generating
                 leads.
               </p>
@@ -401,7 +401,7 @@ const BeacamePartner = ({ mainData }) => {
               <div class="step-number">4</div>
               <h5 class="fw-bold">Sign DSA Agreement</h5>
               <p>
-                Once signed and stamped, you will be an official Ruloans Loan
+                Once signed and stamped, you will be an official My Scopes Loan
                 DSA Partner running a Loan DSA Franchise.
               </p>
             </div>
@@ -415,20 +415,21 @@ const BeacamePartner = ({ mainData }) => {
       {/* section-5 */}
       <div class="container py-5">
         <h2 class="text-center mb-4">
-          Why Partner With Ruloans? - Benefits And Perks
+          Why Partner With My Scopes? - Benefits And Perks
         </h2>
         <p class="text-center">
-          Ruloans Distribution Services Private Limited (RDSPL), a one-stop-shop
-          for all types of Loans, Credit Cards, Fixed Deposits, and Insurance
-          covers 4000+ cities in India to serve 500 million under-served
-          borrowers. Ruloans' 25+ years' financial products distribution legacy,
-          265+ partner banks and NBFCs, and yearly business of Rs 30,000+ crores
-          bear testimony to a successful journey in the world of finance.
+          My Scopes Distribution Services Private Limited (RDSPL), a
+          one-stop-shop for all types of Loans, Credit Cards, Fixed Deposits,
+          and Insurance covers 4000+ cities in India to serve 500 million
+          under-served borrowers. My Scopes' 25+ years' financial products
+          distribution legacy, 265+ partner banks and NBFCs, and yearly business
+          of Rs 30,000+ crores bear testimony to a successful journey in the
+          world of finance.
         </p>
         <p class="text-center">
           Other than the above, the following are the reasons why you should go
-          for Online Loan DSA Registration to partner with Ruloans as a Loan DSA
-          Partner:
+          for Online Loan DSA Registration to partner with My Scopes as a Loan
+          DSA Partner:
         </p>
 
         <div class="row text-center gy-4">
@@ -476,7 +477,7 @@ const BeacamePartner = ({ mainData }) => {
 
         <h3 class="text-center mb-4">Features And Earnings of DSA Program</h3>
         <p class="text-center">
-          In your role as a Ruloans Business Partner in our Loan DSA Partner
+          In your role as a My Scopes Business Partner in our Loan DSA Partner
           program as a Loan DSA Franchise, you do the following:
         </p>
 

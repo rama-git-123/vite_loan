@@ -9,9 +9,9 @@ const ContactUs = () => {
           <Breadcrumb location={location} page={"contact us"} />
           <div class="alert alert-warning text-center" role="alert">
             <strong>Note:</strong> We do not charge for our services to
-            customers. If any Ruloans personnel take any charges other than bank
-            fees, please immediately contact our toll-free number or write to
-            us.
+            customers. If any My Scopes personnel take any charges other than
+            bank fees, please immediately contact our toll-free number or write
+            to us.
           </div>
 
           <div class="row">

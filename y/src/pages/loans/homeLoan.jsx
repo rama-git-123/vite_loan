@@ -222,7 +222,7 @@ const HomeLoan = ({ mainData }) => {
             known as an Equated Monthly Instalment (EMI). This monthly payment
             includes repayment of the principal amount of your loan divided over
             the period of the loan, with the agreed interest amount on the
-            outstanding amount of your home loan. Ruloans online Home Loan EMI
+            outstanding amount of your home loan. My Scopes online Home Loan EMI
             Calculator is essential to make an up-to-date decision to execute
             your Home Loan Plan at optimum levels. This EMI calculator online
             aids you to perform complex computing functions to calculate your

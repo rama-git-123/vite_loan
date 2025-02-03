@@ -20,32 +20,34 @@ const Faq = ({ mainData }) => {
         return mainData?.faqData?.loanAgainstPropertyFaq;
       case "/loans/car-loan":
         return mainData?.faqData?.carLoanFaq;
-        case "/loans/education-loan":
-          return mainData?.faqData?.educationLoanFaq;
-        case "/loans/gold-loan":
-          return mainData?.faqData?.goldLoanFaq;
+      case "/loans/education-loan":
+        return mainData?.faqData?.educationLoanFaq;
+      case "/loans/gold-loan":
+        return mainData?.faqData?.goldLoanFaq;
       //   case "/insurance/All-Insurance":
       //     return bannerImage1;
-      //   case "/insurance/life-insurance":
-      //     return bannerImage1;
-      //   case "/insurance/Health-Insurance":
-      //     return bannerImage1;
-      //   case "/insurance/General-Insurance":
-      //     return bannerImage1;
-      //   case "/dsa/personal-loan-dsa":
-      //     return bannerImage1;
-      //   case "/dsa/home-loan-dsa":
-      //     return bannerImage1;
-      //   case "/dsa/business-loan-dsa":
-      //     return bannerImage1;
-      //   case "/dsa/loan-against-property-dsa":
-      //     return bannerImage1;
-      //   case "/dsa/education-loan-dsa":
-      //     return bannerImage1;
-      //   case "/dsa/auto-loan-dsa":
-      //     return bannerImage1;
-      //   case "/dsa/credit-card-dsa":
-      //     return bannerImage1;
+      case "/insurance/life-insurance":
+        return mainData?.faqData?.lifeInsuranceFaq;
+      case "/insurance/Health-Insurance":
+        return mainData?.faqData?.healthInsuranceFaq;
+      case "/insurance/General-Insurance":
+        return mainData?.faqData?.generalInsuranceFaq;
+      case "/dsa/personal-loan-dsa":
+        return mainData?.faqData?.personalLoanDsaFaq;
+      case "/dsa/home-loan-dsa":
+        return mainData?.faqData?.personalLoanDsaFaq;
+      case "/dsa/business-loan-dsa":
+        return mainData?.faqData?.personalLoanDsaFaq;
+      case "/dsa/loan-against-property-dsa":
+        return mainData?.faqData?.personalLoanDsaFaq;
+      case "/dsa/education-loan-dsa":
+        return mainData?.faqData?.personalLoanDsaFaq;
+      case "/dsa/auto-loan-dsa":
+        return mainData?.faqData?.personalLoanDsaFaq;
+      case "/dsa/credit-card-dsa":
+        return mainData?.faqData?.personalLoanDsaFaq;
+      case "/become-a-partner":
+        return mainData?.faqData?.personalLoanDsaFaq;
       //   case "/loans/features":
       //     return bannerImage1;
       //   //   case "/insurance/contact-us":

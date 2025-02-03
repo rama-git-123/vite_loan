@@ -166,7 +166,7 @@ const GoldLoan = ({ mainData }) => {
         </div>
         <div>
           <h2 className="margin-t-2 margin-b-2">
-            How to Apply for Gold Loan at Ruloans?
+            How to Apply for Gold Loan at My Scopes?
           </h2>
           <p>
             To apply for a gold loan, you can follow these general steps. Keep
