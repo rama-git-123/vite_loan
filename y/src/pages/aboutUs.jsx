@@ -3,6 +3,7 @@ import Breadcrumb from "../components/breadcrumb/breadcrumb";
 import clientImageIcon from "../assets/images/image-111.webp";
 import clientImageIcon2 from "../assets/images/image-222.webp";
 import clientImage from "../assets/images/about-page-intro.webp";
+import authorImage from "../assets/images/founder.jpg";
 import Faq from "../components/faq/faq";
 import "./aboutus.scss";
 const AboutUs = ({ mainData }) => {
@@ -154,11 +155,7 @@ const AboutUs = ({ mainData }) => {
           <div class="container ">
             <div class="row align-items-center ">
               <div class="col-md-4 text-center">
-                <img
-                  src="https://via.placeholder.com/250x250"
-                  alt="Founder"
-                  class="img-fluid rounded-circle shadow"
-                />
+              <img src={authorImage} />
               </div>
 
               <div class="col-md-8">
@@ -176,8 +173,8 @@ const AboutUs = ({ mainData }) => {
                   the gap between the credit-seeking individuals and authentic
                   lenders.”
                 </p>
-                <p class="fw-bold text-danger mb-0">Kaushik Mehta</p>
-                <p class="text-muted">Founder of My Scope</p>
+                <p class="fw-bold text-danger mb-0">Bhabani Prasad Das Mohapatra</p>
+                <p class="text-muted">Founder of Ram balram Finserv</p>
               </div>
             </div>
           </div>

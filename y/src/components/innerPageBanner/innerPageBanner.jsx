@@ -1,12 +1,16 @@
 import "./innerPageBanner.scss";
 import bannerImage1 from "../../assets/images/banner-trade-en.webp";
-import personalloanImage1 from "../../assets/images/banner-trade-en.jpg";
+import personalloanImage1 from "../../assets/images/personal-loan.jpg";
 import homeloanImage from "../../assets/images/home-loan.jpg";
 import businessloanImage from "../../assets/images/business-loan.jpg";
 import propertyloanImage from "../../assets/images/property-loan.jpg";
 import carloanImage from "../../assets/images/car-loan.jpg";
 import educationloanImage from "../../assets/images/education-loan.jpg";
 import goldloanImage from "../../assets/images/gold-loan.jpg";
+import allinsuranceimage from "../../assets/images/allinsurance.jpg";
+import lifeinsuranceimage from "../../assets/images/lifeinsurance.jpg";
+import healthinsuranceimage from "../../assets/images/healthinsurance.jpg";
+import generalinsuranceimage from "../../assets/images/generalinsurance.jpg";
 const InnerPageBanner = ({ location }) => {
   const getBannerImage = () => {
     switch (location.pathname) {
@@ -29,23 +33,23 @@ const InnerPageBanner = ({ location }) => {
       case "/loans/gold-loan":
         return goldloanImage;
       case "/insurance/All-Insurance":
-        return bannerImage1;
+        return allinsuranceimage;
       case "/insurance/life-insurance":
-        return bannerImage1;
+        return lifeinsuranceimage;
       case "/insurance/Health-Insurance":
-        return bannerImage1;
+        return healthinsuranceimage;
       case "/insurance/General-Insurance":
-        return bannerImage1;
+        return generalinsuranceimage;
       case "/dsa/personal-loan-dsa":
-        return bannerImage1;
+        return personalloanImage1;
       case "/dsa/home-loan-dsa":
-        return bannerImage1;
+        return homeloanImage;
       case "/dsa/business-loan-dsa":
-        return bannerImage1;
+        return businessloanImage;
       case "/dsa/loan-against-property-dsa":
-        return bannerImage1;
+        return propertyloanImage;
       case "/dsa/education-loan-dsa":
-        return bannerImage1;
+        return educationloanImage;
       case "/dsa/auto-loan-dsa":
         return bannerImage1;
       case "/dsa/credit-card-dsa":
